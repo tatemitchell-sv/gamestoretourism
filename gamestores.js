@@ -46,9 +46,21 @@ export default [
         "phonenumber": "(208) 607-9333",
         "website": "",
         "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=vjAbf1QM90B32A3x2XNKfA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=281.6134&pitch=0&thumbfov=100",
-        "products-services": [
+        "productsServices": [
             {
-                "name": "",
+                "name": "Magic: The Gathering",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Settlers of Catan",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Yu-Gi-OH",
                 "info": "",
                 "img": "",
                 "link": ""
@@ -110,9 +122,21 @@ export default [
         ],
         "website": "https://m.facebook.com/AStreetGames/",
         "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNnQDeSsj3nrbwfKLIIUW415A0FYnY-i_gnuPjR=w408-h725-k-no",
-        "products-services": [
+        "productsServices": [
             {
-                "name": "",
+                "name": "Magic: The Gathering",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Settlers of Catan",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Yu-Gi-OH",
                 "info": "",
                 "img": "",
                 "link": ""
@@ -174,9 +198,21 @@ export default [
         ],
         "website": "http://www.madnessgames.com/",
         "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPMRd1Y_cx7b8mRhzxwupwsqbfo69Dj80-Y2Umg=w426-h240-k-no",
-        "products-services": [
+        "productsServices": [
             {
-                "name": "",
+                "name": "Magic: The Gathering",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Settlers of Catan",
+                "info": "",
+                "img": "",
+                "link": ""
+            },
+            {
+                "name": "Yu-Gi-OH",
                 "info": "",
                 "img": "",
                 "link": ""
