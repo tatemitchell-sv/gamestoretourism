@@ -1,27 +1,36 @@
 <script setup>
+import chipMap from '../utils/chipMap.js'
 defineProps({ store: Object })
+
+
 </script>
 
 <template>
-    <q-page class="storeCard">
-        <img class="banner" :src="store.thumbnail" />
-        <h3>{{ store.name }}</h3>
-        <p>{{ store.locations.city }}, {{ store.locations.state }}</p>
-        For fans of:
-        <ul>
-            <li v-for="product in store.productsServices" :key="product.name">
+    <q-card class="my-card">
+        <q-img :src="store.thumbnail">
+            <div class="absolute-bottom text-h6">
+                {{ store.name }}
+            </div>
+            <div class="text-subtitle2">{{ store.locations.city }}, {{ store.locations.state }}</div>
+        </q-img>
+
+        <q-card-section>
+            For fans of:
+            <q-chip v-for="product in chipMap(store.productsServices)" :key="product.name" class="glossy"
+                :color="product.chipColor" text-color="white" :icon-right="product.chipIcon">
                 {{ product.name }}
-            </li>
-        </ul>
-    </q-page>
+            </q-chip>
+        </q-card-section>
+    </q-card>
 </template>
 
 <style scoped>
-.storeCard {
-    background-color: gray;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    border-radius: 2%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+.q-img__image {
+    width: 100%;
+    height: auto;
+}
+
+.q-card__section {
+    text-decoration: none;
 }
 </style>
