@@ -6,36 +6,73 @@ import { RouterLink } from 'vue-router';
 
 <template>
   <q-page class="">
-    <h1>Home</h1>
-    <h2>Featured Locations</h2>
+    <q-banner style="padding: 0px">
+      <q-img
+        src="https://res.cloudinary.com/htatemitchell/image/upload/v1650909159/gamestoretour/dungeons-dragons-wallpaper-1_dtctd5.jpg">
+        <div class="absolute-left">
+          <h1>Gamestore Finder</h1>
+        </div>
+      </q-img>
+    </q-banner>
+    <q-banner inline-actions class="text-white bg-accent">
+      Find a game store near you!
+      <template v-slot:action>
+        <q-btn flat color="white" label="Let's Go!" />
+      </template>
+    </q-banner>
 
-    <div class="row q-gutter-md">
+    <section>
+      <h2>Featured Locations</h2>
 
-      <div class="col">
-        <RouterLink class="cardLink" to="/store/0">
-          <StoreCard :store="data[0]" />
-        </RouterLink>
+      <div class="row q-gutter-md">
+
+        <div class="col">
+          <RouterLink class="cardLink" to="/store/0">
+            <StoreCard :store="data[0]" />
+          </RouterLink>
+        </div>
+
+        <div class="col">
+          <RouterLink class="cardLink" to="/store/1">
+            <StoreCard :store="data[1]" />
+          </RouterLink>
+        </div>
+
+        <div class="col">
+          <RouterLink class="cardLink" to="/store/2">
+            <StoreCard :store="data[2]" />
+          </RouterLink>
+        </div>
+
       </div>
+    </section>
 
-      <div class="col">
-        <RouterLink class="cardLink" to="/store/1">
-          <StoreCard :store="data[1]" />
-        </RouterLink>
-      </div>
+    <section>
+      <h2>Upcoming Events</h2>
+    </section>
 
-      <div class="col">
-        <RouterLink class="cardLink" to="/store/2">
-          <StoreCard :store="data[2]" />
-        </RouterLink>
-      </div>
 
-    </div>
-
-    <h2>Upcoming Events</h2>
   </q-page>
 </template>
 
 <style scoped>
+.q-img__content>div {
+  background-color: unset;
+}
+
+.absolute-left {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 50%, rgba(0, 0, 0, 0));
+  display: flex;
+  text-align: center;
+  font-size: 40px;
+  align-items: center;
+}
+
+h1 {
+  height: fit-content;
+  display: block;
+}
+
 .cardLink {
   text-decoration: none;
   color: black;

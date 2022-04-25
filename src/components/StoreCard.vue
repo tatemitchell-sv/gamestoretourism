@@ -1,5 +1,6 @@
 <script setup>
 import chipMap from '../utils/chipMap.js'
+import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 defineProps({ store: Object })
 
 
@@ -7,7 +8,8 @@ defineProps({ store: Object })
 
 <template>
     <q-card class="my-card">
-        <q-img :src="store.thumbnail">
+        <q-img
+            :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 350, 500)">
             <div class="absolute-bottom text-h6">
                 {{ store.name }}
             </div>
@@ -17,7 +19,7 @@ defineProps({ store: Object })
         <q-card-section>
             For fans of:
             <q-chip v-for="product in chipMap(store.productsServices)" :key="product.name" class="glossy"
-                :color="product.chipColor" text-color="white" :icon-right="product.chipIcon">
+                :color="product.chipColor" text-color="white" :icon-right="product.iconWhite">
                 {{ product.name }}
             </q-chip>
         </q-card-section>
@@ -32,5 +34,7 @@ defineProps({ store: Object })
 
 .q-card__section {
     text-decoration: none;
+    color: white;
+    background-color: black;
 }
 </style>

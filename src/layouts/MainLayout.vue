@@ -6,32 +6,26 @@ const linksList = [
   {
     title: 'Magic: The Gathering Official Website',
     caption: 'magic.wizards.com',
-    icon: '',
+    icon: 'img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png',
     link: 'https://magic.wizards.com/en'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Dungeons & Dragons Official Website',
+    caption: 'dnd.wizards.com',
+    icon: 'img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png',
+    link: 'https://dnd.wizards.com/'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: 'Pokemon Official Website',
+    caption: 'portal-pokemon.com',
+    icon: 'img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png',
+    link: 'https://www.portal-pokemon.com/'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    title: 'Yu-Gi-Oh! Official Website',
+    caption: 'yugioh-card.com',
+    icon: 'img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png',
+    link: 'https://www.yugioh-card.com/en/'
   },
   {
     title: 'Facebook',
@@ -44,12 +38,18 @@ const linksList = [
     caption: 'Community Quasar projects',
     icon: 'favorite',
     link: 'https://awesome.quasar.dev'
+  },
+  {
+    title: 'Discord Chat Channel',
+    caption: 'chat.quasar.dev',
+    icon: 'chat',
+    link: 'https://chat.quasar.dev'
   }
 ]
 
 let essentialLinks = linksList
 
-let leftDrawerOpen = ref(true)
+let leftDrawerOpen = ref(false)
 
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value

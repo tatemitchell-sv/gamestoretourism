@@ -16,6 +16,16 @@ const chipMap = (products) => {
         element.chipIcon = "fa-solid fa-check";
         break;
 
+      case "Dungeons & Dragons":
+        element.chipColor = "purple";
+        element.chipIcon = "fa-solid fa-check";
+        break;
+
+      case "Pokemon":
+        element.chipColor = "green";
+        element.chipIcon = "fa-solid fa-check";
+        break;
+
       default:
         element.chipColor = "gray";
         element.chipIcon = "fa-solid fa-check";

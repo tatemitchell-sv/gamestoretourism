@@ -12,59 +12,71 @@ export default [
       zip: "83401",
     },
     hours: [
-      {
-        Monday: {
-          open: "12PM",
-          close: "6PM",
-        },
-        Tuesday: {
-          open: "12PM",
-          close: "6PM",
-        },
-        Wednesday: {
-          open: "",
-          close: "",
-        },
-        Thursday: {
-          open: "12PM",
-          close: "6PM",
-        },
-        Friday: {
-          open: "12PM",
-          close: "9PM",
-        },
-        Saturday: {
-          open: "11AM",
-          close: "9PM",
-        },
-        Sunday: {
-          open: "",
-          close: "",
-        },
-      },
+      { day: "Monday", open: "12PM", close: "6PM" },
+      { day: "Tuesday", open: "12PM", close: "6PM" },
+      { day: "Wednesday", open: "", close: "" },
+      { day: "Thursday", open: "12PM", close: "6PM" },
+      { day: "Friday", open: "12PM", close: "9PM" },
+      { day: "Saturday", open: "11AM", close: "9PM" },
+      { day: "Sunday", open: "", close: "" },
     ],
     phonenumber: "(208) 607-9333",
     website: "",
-    thumbnail:
-      "https://res.cloudinary.com/htatemitchell/image/upload/h_350,w_500,c_fill/v1650404501/gamestoretour/roundtablethumbnail_wnzooo.jpg",
+    thumbnail: {
+      imgName: "roundtablethumbnail_wnzooo",
+      imgId: "v1650404501",
+      imgType: "jpg",
+    },
     productsServices: [
       {
         name: "Magic: The Gathering",
         info: "",
-        img: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
         name: "Settlers of Catan",
         info: "",
-        img: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
         name: "Yu-Gi-Oh!",
         info: "",
-        img: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
       },
     ],
     events: [
@@ -90,58 +102,70 @@ export default [
       zip: "83402",
     },
     hours: [
-      {
-        Monday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Tuesday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Wednesday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Thursday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Friday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Saturday: {
-          open: "11AM",
-          close: "7PM",
-        },
-        Sunday: {
-          open: "",
-          close: "",
-        },
-      },
+      { day: "Monday", open: "11AM", close: "7PM" },
+      { day: "Tuesday", open: "11AM", close: "7PM" },
+      { day: "Wednesday", open: "11AM", close: "7PM" },
+      { day: "Thursday", open: "11AM", close: "7PM" },
+      { day: "Friday", open: "11AM", close: "7PM" },
+      { day: "Saturday", open: "11AM", close: "7PM" },
+      { day: "Sunday", open: "", close: "" },
     ],
     website: "https://m.facebook.com/AStreetGames/",
-    thumbnail:
-      "https://res.cloudinary.com/htatemitchell/image/upload/h_350,w_500,c_fill/v1650404501/gamestoretour/astreetthumbnail_lrlwnz.jpg",
+    thumbnail: {
+      imgName: "astreetthumbnail_lrlwnz_xqec3d",
+      imgId: "v1650927666",
+      imgType: "jpg",
+    },
     productsServices: [
       {
         name: "Magic: The Gathering",
         info: "",
-        img: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
         name: "Settlers of Catan",
         info: "",
-        img: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
         name: "Yu-Gi-Oh!",
         info: "",
-        img: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
       },
     ],
     events: [
@@ -167,58 +191,70 @@ export default [
       zip: "75075",
     },
     hours: [
-      {
-        Monday: {
-          open: "11AM",
-          close: "9PM",
-        },
-        Tuesday: {
-          open: "11AM",
-          close: "9PM",
-        },
-        Wednesday: {
-          open: "10AM",
-          close: "9PM",
-        },
-        Thursday: {
-          open: "11AM",
-          close: "9PM",
-        },
-        Friday: {
-          open: "11AM",
-          close: "12AM",
-        },
-        Saturday: {
-          open: "10AM",
-          close: "12AM",
-        },
-        Sunday: {
-          open: "11AM",
-          close: "9PM",
-        },
-      },
+      { day: "Monday", open: "11AM", close: "9PM" },
+      { day: "Tuesday", open: "11AM", close: "9PM" },
+      { day: "Wednesday", open: "11AM", close: "9PM" },
+      { day: "Thursday", open: "11AM", close: "9PM" },
+      { day: "Friday", open: "11AM", close: "12AM" },
+      { day: "Saturday", open: "10AM", close: "12AM" },
+      { day: "Sunday", open: "11AM", close: "9PM" },
     ],
     website: "http://www.madnessgames.com/",
-    thumbnail:
-      "https://res.cloudinary.com/htatemitchell/image/upload/h_350,w_500,c_fill/v1650404500/gamestoretour/madnessthumbnail_smlvw9.jpg",
+    thumbnail: {
+      imgName: "madnessthumbnail_smlvw9",
+      imgId: "v1650404500",
+      imgType: "jpg",
+    },
     productsServices: [
       {
         name: "Magic: The Gathering",
         info: "",
-        img: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
         name: "Settlers of Catan",
         info: "",
-        img: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
         name: "Yu-Gi-Oh!",
         info: "",
-        img: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
         link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
       },
     ],
     events: [
