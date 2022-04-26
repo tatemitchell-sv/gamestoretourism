@@ -14,6 +14,14 @@ const routes = [
   },
 
   {
+    path: "/browse",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "/browse", component: () => import("pages/BrowsePage.vue") },
+    ],
+  },
+
+  {
     path: "/store/:id",
     component: () => import("layouts/MainLayout.vue"),
     children: [

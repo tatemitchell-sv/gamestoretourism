@@ -12,7 +12,7 @@ const chipMap = (products) => {
         break;
 
       case "Yu-Gi-Oh!":
-        element.chipColor = "yellow";
+        element.chipColor = "orange";
         element.chipIcon = "fa-solid fa-check";
         break;
 

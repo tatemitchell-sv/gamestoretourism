@@ -58,7 +58,7 @@ const toggleLeftDrawer = () => {
 </script>
 
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lff">
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
@@ -86,6 +86,13 @@ const toggleLeftDrawer = () => {
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer>
+      <div>
+        <h2>footer</h2>
+        <p>© 2022 H. T. Mitchell Development. All rights reserved.</p>
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 

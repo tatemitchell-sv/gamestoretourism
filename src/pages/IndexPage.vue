@@ -39,11 +39,14 @@ import { RouterLink } from 'vue-router';
         </div>
 
         <div class="col">
-          <RouterLink class="cardLink" to="/store/2">
-            <StoreCard :store="data[2]" />
+          <RouterLink class="cardLink" to="/store/3">
+            <StoreCard :store="data[3]" />
           </RouterLink>
         </div>
 
+      </div>
+      <div>
+        <q-btn color="secondary" label="Browse All Stores" to="/browse" />
       </div>
     </section>
 
@@ -53,6 +56,7 @@ import { RouterLink } from 'vue-router';
 
 
   </q-page>
+
 </template>
 
 <style scoped>
@@ -61,7 +65,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .absolute-left {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 50%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
   display: flex;
   text-align: center;
   font-size: 40px;

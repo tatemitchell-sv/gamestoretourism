@@ -267,4 +267,94 @@ export default [
       },
     ],
   },
+  // Generation X Games & Comics
+  {
+    name: "Generation X Games & Comics",
+    locations: {
+      latitude: "33.039810",
+      longitude: "-96.731567",
+      streetAddress1: "3504 Harwood Rd",
+      streetAddress2: "",
+      city: "Bedford",
+      state: "TX",
+      zip: "76021",
+    },
+    phonenumber: "(817) 540-5556",
+    hours: [
+      { day: "Monday", open: "12PM", close: "8PM" },
+      { day: "Tuesday", open: "12PM", close: "8PM" },
+      { day: "Wednesday", open: "11AM", close: "10PM" },
+      { day: "Thursday", open: "11AM", close: "10PM" },
+      { day: "Friday", open: "11AM", close: "11PM" },
+      { day: "Saturday", open: "11AM", close: "8PM" },
+      { day: "Sunday", open: "12PM", close: "6PM" },
+    ],
+    website: "https://generation-x-comics-and-games.myshopify.com/",
+    thumbnail: {
+      imgName: "genxgames_kqtcig",
+      imgId: "v1650931771",
+      imgType: "jpg",
+    },
+    productsServices: [
+      {
+        name: "Magic: The Gathering",
+        info: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
+      },
+      {
+        name: "Settlers of Catan",
+        info: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
+      },
+      {
+        name: "Yu-Gi-Oh!",
+        info: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
+      },
+    ],
+    events: [
+      {
+        name: "",
+        type: "",
+        info: "",
+        fee: "",
+        time: "",
+      },
+    ],
+  },
 ];
