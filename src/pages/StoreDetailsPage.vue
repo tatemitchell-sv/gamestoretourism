@@ -7,7 +7,25 @@ const route = useRoute()
 
 const store = data.find(store => store.id === route.params.id);
 
+// slide is for carousel index
 let slide = ref(1);
+
+
+// "gridify" images in gallery array (make multidimensional)
+const colsPerRow = 3;
+let rows = [];
+let i = 0;
+while (i <= store.gallery.length) {
+    let row = []
+    for (let j = 0; j < colsPerRow; j++) {
+        if (store.gallery.length > i + j) {
+            row.push(store.gallery[i + j]);
+        }
+    }
+    rows.push(row);
+    i += colsPerRow;
+    console.log('i =' + i)
+}
 
 </script>
 
@@ -77,6 +95,15 @@ let slide = ref(1);
                     <q-carousel-slide v-for="(image, index) in store.gallery" :key="image.imgId" :name="index + 1"
                         :img-src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, null, null)" />
                 </q-carousel>
+            </div>
+            <hr />
+        </section>
+        <section>
+            <h3>Crazy Gallery!!!</h3>
+            <div v-for="(row, index) in rows" :key="index" class="row">
+                <div v-for="image in row" :key="image.imgId" class="col">
+                    <img :src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, 200, 300)">
+                </div>
             </div>
         </section>
     </q-page>
