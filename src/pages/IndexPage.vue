@@ -27,21 +27,15 @@ import { RouterLink } from 'vue-router';
       <div class="row q-gutter-md">
 
         <div class="col">
-          <RouterLink class="cardLink" to="/store/0">
-            <StoreCard :store="data[0]" />
-          </RouterLink>
+          <StoreCard :store="data[0]" />
         </div>
 
         <div class="col">
-          <RouterLink class="cardLink" to="/store/1">
-            <StoreCard :store="data[1]" />
-          </RouterLink>
+          <StoreCard :store="data[1]" />
         </div>
 
         <div class="col">
-          <RouterLink class="cardLink" to="/store/3">
-            <StoreCard :store="data[3]" />
-          </RouterLink>
+          <StoreCard :store="data[3]" />
         </div>
 
       </div>
@@ -79,7 +73,7 @@ h1 {
 
 .cardLink {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .cardLink :visited,

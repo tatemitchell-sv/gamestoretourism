@@ -7,14 +7,18 @@ defineProps({ store: Object })
 </script>
 
 <template>
+
     <q-card class="my-card">
-        <q-img
-            :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 350, 500)">
-            <div class="absolute-bottom text-h6">
-                {{ store.name }}
-            </div>
-            <div class="text-subtitle2">{{ store.locations.city }}, {{ store.locations.state }}</div>
-        </q-img>
+
+        <RouterLink class="cardLink" :to="`/store/${store.id}`">
+            <q-img
+                :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 350, 500)">
+                <div class="absolute-bottom text-h6">
+                    {{ store.name }}
+                </div>
+                <div class="text-subtitle2">{{ store.locations.city }}, {{ store.locations.state }}</div>
+            </q-img>
+        </RouterLink>
 
         <q-card-section>
             For fans of:
@@ -24,6 +28,7 @@ defineProps({ store: Object })
             </q-chip>
         </q-card-section>
     </q-card>
+
 </template>
 
 <style scoped>

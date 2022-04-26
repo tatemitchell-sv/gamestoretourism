@@ -1,13 +1,14 @@
 <script setup>
 import { useRoute } from 'vue-router';
+import { ref } from 'vue'
 import data from '../../gamestores.js'
-import MasonryGallery from 'src/components/MasonryGallery.vue';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 const route = useRoute()
-const storeID = route.params.id;
-const store = data[storeID];
 
-console.log("storeThumbnail is:", store.thumbnail)
+const store = data.find(store => store.id === route.params.id);
+
+let slide = ref(1);
+
 </script>
 
 <template>
@@ -63,17 +64,30 @@ console.log("storeThumbnail is:", store.thumbnail)
             <h3>Products and Services</h3>
             <div class="row">
                 <div v-for="product in store.productsServices" :key="product.name" class="col">
-                    <img :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, product.img.imgType, 100, 300)">
+                    <img class="productImg"
+                        :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, product.img.imgType, 50, 150)">
                 </div>
             </div>
         </section>
         <hr />
         <section>
             <h3>Gallery</h3>
-            <MasonryGallery :pic="store.thumbnail" />
+            <div class="q-pa-md">
+                <q-carousel swipeable animated v-model="slide" thumbnails infinite>
+                    <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
+                    <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
+                    <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
+                    <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+                    <q-carousel-slide :name="5"
+                        :img-src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, null, 500)" />
+                </q-carousel>
+            </div>
         </section>
     </q-page>
 </template>
 
 <style scoped>
+.productImg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 </style>

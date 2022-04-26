@@ -2,6 +2,7 @@ export default [
   // Round Table Games
   {
     name: "Round Table Games",
+    id: "001",
     locations: {
       latitude: "43.490080",
       longitude: "-112.023890",
@@ -11,6 +12,7 @@ export default [
       state: "ID",
       zip: "83401",
     },
+    phonenumber: "(208) 607-9333",
     hours: [
       { day: "Monday", open: "12PM", close: "6PM" },
       { day: "Tuesday", open: "12PM", close: "6PM" },
@@ -20,7 +22,6 @@ export default [
       { day: "Saturday", open: "11AM", close: "9PM" },
       { day: "Sunday", open: "", close: "" },
     ],
-    phonenumber: "(208) 607-9333",
     website: "",
     thumbnail: {
       imgName: "roundtablethumbnail_wnzooo",
@@ -92,6 +93,7 @@ export default [
   // A Street Games
   {
     name: "A Street Games",
+    id: "002",
     locations: {
       latitude: "43.492510",
       longitude: "-112.041210",
@@ -101,6 +103,7 @@ export default [
       state: "ID",
       zip: "83402",
     },
+    phonenumber: "(208) 542-2824",
     hours: [
       { day: "Monday", open: "11AM", close: "7PM" },
       { day: "Tuesday", open: "11AM", close: "7PM" },
@@ -181,6 +184,7 @@ export default [
   // Madness Games & Comics
   {
     name: "Madness Games & Comics",
+    id: "003",
     locations: {
       latitude: "33.039810",
       longitude: "-96.731567",
@@ -190,6 +194,7 @@ export default [
       state: "TX",
       zip: "75075",
     },
+    phonenumber: "(972) 943-8135",
     hours: [
       { day: "Monday", open: "11AM", close: "9PM" },
       { day: "Tuesday", open: "11AM", close: "9PM" },
@@ -270,9 +275,10 @@ export default [
   // Generation X Games & Comics
   {
     name: "Generation X Games & Comics",
+    id: "004",
     locations: {
-      latitude: "33.039810",
-      longitude: "-96.731567",
+      latitude: "32.850910",
+      longitude: "-97.109520",
       streetAddress1: "3504 Harwood Rd",
       streetAddress2: "",
       city: "Bedford",
@@ -354,6 +360,377 @@ export default [
         info: "",
         fee: "",
         time: "",
+      },
+    ],
+  },
+  // Boardwalk Games
+  {
+    name: "Boardwalk Games",
+    id: "005",
+    locations: {
+      latitude: "32.985720",
+      longitude: "-96.853720",
+      streetAddress1: "2810 E Trinity Mls Rd",
+      streetAddress2: "",
+      city: "Carrollton",
+      state: "TX",
+      zip: "75006",
+    },
+    phonenumber: "(972) 810-0182",
+    hours: [
+      { day: "Monday", open: "12PM", close: "10PM" },
+      { day: "Tuesday", open: "12PM", close: "10PM" },
+      { day: "Wednesday", open: "12PM", close: "10PM" },
+      { day: "Thursday", open: "12PM", close: "10PM" },
+      { day: "Friday", open: "12PM", close: "12AM" },
+      { day: "Saturday", open: "12PM", close: "10PM" },
+      { day: "Sunday", open: "12PM", close: "8PM" },
+    ],
+    website: "http://boardwalk-games.com/",
+    thumbnail: {
+      imgName: "boardwalkgames_om9e0j",
+      imgId: "v1650997609",
+      imgType: "jpg",
+    },
+    productsServices: [
+      {
+        name: "Magic: The Gathering",
+        info: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
+      },
+      {
+        name: "Settlers of Catan",
+        info: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
+      },
+      {
+        name: "Yu-Gi-Oh!",
+        info: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
+      },
+    ],
+    events: [
+      {
+        name: "",
+        type: "",
+        info: "",
+        fee: "",
+        time: "",
+      },
+    ],
+  },
+  // GamePulse
+  {
+    name: "GamePulse",
+    id: "006",
+    locations: {
+      latitude: "43.825680",
+      longitude: "-111.782020",
+      streetAddress1: "52 E Main St",
+      streetAddress2: "",
+      city: "Rexburg",
+      state: "ID",
+      zip: "83440",
+    },
+    phonenumber: "(208) 437-8060",
+    hours: [
+      { day: "Monday", open: "12PM", close: "10PM" },
+      { day: "Tuesday", open: "12PM", close: "10PM" },
+      { day: "Wednesday", open: "12PM", close: "10PM" },
+      { day: "Thursday", open: "12PM", close: "10PM" },
+      { day: "Friday", open: "12PM", close: "11PM" },
+      { day: "Saturday", open: "1PM", close: "11PM" },
+      { day: "Sunday", open: "", close: "" },
+    ],
+    website: "https://m.facebook.com/GamePulse/",
+    thumbnail: {
+      imgName: "gamepulse_l1cgdg",
+      imgId: "v1650998009",
+      imgType: "jpg",
+    },
+    productsServices: [
+      {
+        name: "Magic: The Gathering",
+        info: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
+      },
+      {
+        name: "Settlers of Catan",
+        info: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
+      },
+      {
+        name: "Yu-Gi-Oh!",
+        info: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
+      },
+    ],
+    events: [
+      {
+        name: "",
+        type: "",
+        info: "",
+        fee: "",
+        time: "",
+      },
+    ],
+  },
+  // Gameopolis
+  {
+    name: "Gameopolis",
+    id: "007",
+    locations: {
+      latitude: "43.487670",
+      longitude: "-112.033920",
+      streetAddress1: "1150 S Blvd",
+      streetAddress2: "",
+      city: "Idaho Falls",
+      state: "ID",
+      zip: "83402",
+    },
+    phonenumber: "(208) 529-8026",
+    hours: [
+      { day: "Monday", open: "11AM", close: "9PM" },
+      { day: "Tuesday", open: "11AM", close: "9PM" },
+      { day: "Wednesday", open: "11AM", close: "9PM" },
+      { day: "Thursday", open: "11AM", close: "9PM" },
+      { day: "Friday", open: "11AM", close: "9PM" },
+      { day: "Saturday", open: "10AM", close: "6PM" },
+      { day: "Sunday", open: "", close: "" },
+    ],
+    website: "http://www.discountgamesinc.com/",
+    thumbnail: {
+      imgName: "gameopolis_adxvyh",
+      imgId: "v1650998556",
+      imgType: "jpg",
+    },
+    productsServices: [
+      {
+        name: "Magic: The Gathering",
+        info: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
+      },
+      {
+        name: "Settlers of Catan",
+        info: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
+      },
+      {
+        name: "Yu-Gi-Oh!",
+        info: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
+      },
+    ],
+    events: [
+      {
+        name: "",
+        type: "",
+        info: "",
+        fee: "",
+        time: "",
+      },
+    ],
+  },
+  // Inner Circle Comics and Games
+  {
+    name: "Inner Circle Comics and Games",
+    id: "008",
+    locations: {
+      latitude: "43.482290",
+      longitude: "-111.990580",
+      streetAddress1: "2099 E 17th St",
+      streetAddress2: "",
+      city: "Idaho Falls",
+      state: "ID",
+      zip: "83404",
+    },
+    phonenumber: "(208) 201-0358",
+    hours: [
+      { day: "Monday", open: "11AM", close: "6PM" },
+      { day: "Tuesday", open: "11AM", close: "6PM" },
+      { day: "Wednesday", open: "11AM", close: "6PM" },
+      { day: "Thursday", open: "11AM", close: "6PM" },
+      { day: "Friday", open: "11AM", close: "6PM" },
+      { day: "Saturday", open: "11AM", close: "6PM" },
+      { day: "Sunday", open: "", close: "" },
+    ],
+    website: "https://www.innercirclecomicsandgames.com/",
+    thumbnail: {
+      imgName: "innercircle_yikv0n",
+      imgId: "v1651000494",
+      imgType: "jpg",
+    },
+    productsServices: [
+      {
+        name: "Magic: The Gathering",
+        info: "",
+        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
+      },
+      {
+        name: "Settlers of Catan",
+        info: "",
+        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
+      },
+      {
+        name: "Yu-Gi-Oh!",
+        info: "",
+        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
+      },
+      {
+        name: "Dungeons & Dragons",
+        info: "",
+        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
+      },
+      {
+        name: "Pokemon",
+        info: "",
+        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        link: "",
+        iconWhite:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
+        iconBlack:
+          "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconBlack_bi0frk.png",
+      },
+    ],
+    events: [
+      {
+        name: "",
+        type: "",
+        info: "",
+        fee: "",
+        time: "",
+      },
+    ],
+    gallery: [
+      {
+        imgName: "innercircle_yikv0n",
+        imgId: "v1651000494",
+        imgType: "jpg",
       },
     ],
   },

@@ -1,20 +1,43 @@
 <script setup>
 import data from '../../gamestores.js'
 import StoreCard from 'src/components/StoreCard.vue';
+import SearchResult from 'src/components/SearchResult.vue';
 </script>
 
 <template>
     <q-page class="">
-        <h2>All Stores</h2>
+
+
         <div class="row">
-            <div v-for="store in data" :key="store.name" class="col">
-                <RouterLink class="cardLink" to="/store/3">
-                    <StoreCard :store="store" />
-                </RouterLink>
+            <div class="col filterBar">
+                <form>
+                    <p>this is gonna be the filter</p>
+                </form>
+            </div>
+            <div class="col resultsList">
+                <h2>Stores</h2>
+                <div v-for="store in data" :key="store.name">
+                    <SearchResult :store="store" />
+                    <hr />
+                </div>
             </div>
         </div>
+
+
+
     </q-page>
 </template>
 
 <style scoped>
+.filterBar {
+    background-color: gray;
+    position: fixed;
+    height: 100%;
+    width: 16%;
+}
+
+.resultsList {
+    margin-left: 17%;
+    width: 80%;
+}
 </style>
