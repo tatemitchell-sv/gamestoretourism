@@ -74,12 +74,8 @@ let slide = ref(1);
             <h3>Gallery</h3>
             <div class="q-pa-md">
                 <q-carousel swipeable animated v-model="slide" thumbnails infinite>
-                    <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-                    <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-                    <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-                    <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-                    <q-carousel-slide :name="5"
-                        :img-src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, null, 500)" />
+                    <q-carousel-slide v-for="(image, index) in store.gallery" :key="image.imgId" :name="index + 1"
+                        :img-src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, null, null)" />
                 </q-carousel>
             </div>
         </section>

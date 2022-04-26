@@ -89,6 +89,73 @@ export default [
         time: "",
       },
     ],
+    gallery: [
+      {
+        imgName: "roundtablethumbnail_wnzooo",
+        imgId: "v1650404501",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+    ],
   },
   // A Street Games
   {
@@ -178,6 +245,73 @@ export default [
         info: "",
         fee: "",
         time: "",
+      },
+    ],
+    gallery: [
+      {
+        imgName: "astreetthumbnail_lrlwnz_xqec3d",
+        imgId: "v1650927666",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
       },
     ],
   },
@@ -271,6 +405,73 @@ export default [
         time: "",
       },
     ],
+    gallery: [
+      {
+        imgName: "madnessthumbnail_smlvw9",
+        imgId: "v1650404500",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+    ],
   },
   // Generation X Games & Comics
   {
@@ -360,6 +561,73 @@ export default [
         info: "",
         fee: "",
         time: "",
+      },
+    ],
+    gallery: [
+      {
+        imgName: "genxgames_kqtcig",
+        imgId: "v1650931771",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
       },
     ],
   },
@@ -453,6 +721,73 @@ export default [
         time: "",
       },
     ],
+    gallery: [
+      {
+        imgName: "boardwalkgames_om9e0j",
+        imgId: "v1650997609",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+    ],
   },
   // GamePulse
   {
@@ -544,6 +879,73 @@ export default [
         time: "",
       },
     ],
+    gallery: [
+      {
+        imgName: "gamepulse_l1cgdg",
+        imgId: "v1650998009",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+    ],
   },
   // Gameopolis
   {
@@ -633,6 +1035,73 @@ export default [
         info: "",
         fee: "",
         time: "",
+      },
+    ],
+    gallery: [
+      {
+        imgName: "gameopolis_adxvyh",
+        imgId: "v1650998556",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
+        imgType: "jpg",
       },
     ],
   },
@@ -730,6 +1199,66 @@ export default [
       {
         imgName: "innercircle_yikv0n",
         imgId: "v1651000494",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter1",
+        imgId: "v1650908347",
+        imgType: "webp",
+      },
+      {
+        imgName: "counter2",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "counter3",
+        imgId: "v1650410382",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_2_l4vvka",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves1",
+        imgId: "v1650908344",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves2",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves3",
+        imgId: "v1650908344",
+        imgType: "webp",
+      },
+      {
+        imgName: "shelves4",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves5",
+        imgId: "v1650908342",
+        imgType: "jpg",
+      },
+      {
+        imgName: "shelves6",
+        imgId: "v1650908341",
+        imgType: "jpg",
+      },
+      {
+        imgName: "th_pqkev9",
+        imgId: "v1650908345",
+        imgType: "jpg",
+      },
+      {
+        imgName: "images_1_hy46d8",
+        imgId: "v1650908342",
         imgType: "jpg",
       },
     ],
