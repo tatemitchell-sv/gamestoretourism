@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router';
 import { ref } from 'vue'
 import data from '../../gamestores.js'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
+import LightboxDialog from '../components/LightboxDialog.vue'
 const route = useRoute()
 
 const store = data.find(store => store.id === route.params.id);
@@ -20,6 +21,7 @@ while (i <= store.gallery.length) {
     for (let j = 0; j < colsPerRow; j++) {
         if (store.gallery.length > i + j) {
             row.push(store.gallery[i + j]);
+            // store.gallery.slideIndex = i + j + 1;
         }
     }
     rows.push(row);
@@ -79,13 +81,17 @@ while (i <= store.gallery.length) {
         </section>
 
         <section>
-            <h3>Products and Services</h3>
+            <h3>Popular Products and Services</h3>
             <div class="row">
                 <div v-for="product in store.productsServices" :key="product.name" class="col">
                     <img class="productImg"
                         :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, product.img.imgType, 50, 150)">
                 </div>
             </div>
+        </section>
+        <section>
+            <h3>Event Calendar</h3>
+            <p>calendar goes here</p>
         </section>
         <hr />
         <section>
@@ -100,9 +106,10 @@ while (i <= store.gallery.length) {
         </section>
         <section>
             <h3>Crazy Gallery!!!</h3>
+
             <div v-for="(row, index) in rows" :key="index" class="row">
                 <div v-for="image in row" :key="image.imgId" class="col">
-                    <img :src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, 200, 300)">
+                    <!-- <LightboxDialog :image="image" :gallery="store.gallery" /> -->
                 </div>
             </div>
         </section>
