@@ -21,7 +21,7 @@ while (i <= store.gallery.length) {
     for (let j = 0; j < colsPerRow; j++) {
         if (store.gallery.length > i + j) {
             row.push(store.gallery[i + j]);
-            // store.gallery.slideIndex = i + j + 1;
+            store.gallery[i + j].slideIndex = i + j + 1;
         }
     }
     rows.push(row);
@@ -94,22 +94,13 @@ while (i <= store.gallery.length) {
             <p>calendar goes here</p>
         </section>
         <hr />
-        <section>
-            <h3>Gallery</h3>
-            <div class="q-pa-md">
-                <q-carousel swipeable animated v-model="slide" thumbnails infinite>
-                    <q-carousel-slide v-for="(image, index) in store.gallery" :key="image.imgId" :name="index + 1"
-                        :img-src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, null, null)" />
-                </q-carousel>
-            </div>
-            <hr />
-        </section>
+
         <section>
             <h3>Crazy Gallery!!!</h3>
 
             <div v-for="(row, index) in rows" :key="index" class="row">
                 <div v-for="image in row" :key="image.imgId" class="col">
-                    <!-- <LightboxDialog :image="image" :gallery="store.gallery" /> -->
+                    <LightboxDialog :image="image" :gallery="store.gallery" />
                 </div>
             </div>
         </section>

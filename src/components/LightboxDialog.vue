@@ -1,5 +1,4 @@
 <script setup>
-import { numberLiteralTypeAnnotation } from '@babel/types';
 import { ref } from 'vue'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 import CarouselWrapper from './CarouselWrapper.vue';
@@ -26,7 +25,7 @@ let toolbar = ref(false);
                 </q-card-section>
 
                 <q-card-section>
-                    <!-- <CarouselWrapper :gallery="gallery" /> -->
+                    <CarouselWrapper :img="image" :gallery="gallery" />
                 </q-card-section>
 
             </q-card>

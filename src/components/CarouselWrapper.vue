@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
-defineProps({ gallery: Object })
+const props = defineProps({ img: Object, gallery: Object })
 
-let slide = ref(pos)
+let slide = ref(props.img.slideIndex)
 
 </script>
 
