@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router';
       <q-img
         src="https://res.cloudinary.com/htatemitchell/image/upload/v1650909159/gamestoretour/dungeons-dragons-wallpaper-1_dtctd5.jpg">
         <div class="absolute-left">
-          <h1>Gamestore Finder</h1>
+          <h1>GameStore Finder</h1>
         </div>
       </q-img>
     </q-banner>

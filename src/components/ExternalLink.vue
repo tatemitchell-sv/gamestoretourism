@@ -1,5 +1,5 @@
 <template>
-  <q-item clickable tag="RouterLink" :to="link">
+  <q-item clickable tag="a" target="_blank" :href="link">
     <q-item-section v-if="icon" avatar>
       <q-icon :name="icon" />
     </q-item-section>
@@ -13,10 +13,9 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { RouterLink } from 'vue-router'
 
 export default defineComponent({
-  name: 'EssentialLink',
+  name: 'ExternalLink',
   props: {
     title: {
       type: String,
