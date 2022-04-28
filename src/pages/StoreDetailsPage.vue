@@ -5,7 +5,10 @@ import data from '../../gamestores.js'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 import LightboxDialog from '../components/LightboxDialog.vue'
 import MyCalendar from '../components/MyCalendar.vue';
+import EventCard from '../components/EventCard.vue';
 const route = useRoute()
+
+let tab = ref('list');
 
 const store = data.find(store => store.id === route.params.id);
 
@@ -57,7 +60,7 @@ while (i <= store.gallery.length) {
                     </div>
 
                     <div class="row"><a :href="`tel:${store.phonenumber}`">{{ store.phonenumber }}</a></div>
-                    <div class="row">{{ store.website }}</div>
+                    <div class="row"><a :href="store.website" target="_blank">{{ store.website }}</a></div>
 
                     <div class="row">Hours of Operation:</div>
                     <div class="row">
@@ -98,14 +101,45 @@ while (i <= store.gallery.length) {
             </div>
         </section>
         <section>
-            <h3>Event Calendar</h3>
-            <q-btn-group push>
-                <q-btn push label="list" icon="fa-solid fa-list" />
-                <q-btn push label="grid" icon="fa-solid fa-grip" />
-                <q-btn push label="calendar" icon="fa-solid fa-calendar-day" />
-            </q-btn-group>
-            <div class="calendarContainer">
-                <MyCalendar :events="store.events"></MyCalendar>
+            <h3>Events</h3>
+
+            <div class="q-pa-md">
+                <div class="q-gutter-y-md">
+                    <q-card class="panelContainer">
+                        <q-tabs v-model="tab" dense class="text-grey" active-color="primary" indicator-color="primary"
+                            align="justify" narrow-indicator>
+                            <q-tab name="list" label="List" icon="fa-solid fa-list" />
+                            <q-tab name="grid" label="Grid" icon="fa-solid fa-grip" />
+                            <q-tab name="calendar" label="Calendar" icon="fa-solid fa-calendar-day" />
+                        </q-tabs>
+
+                        <q-separator />
+
+                        <q-tab-panels v-model="tab" animated>
+                            <q-tab-panel name="list">
+                                <div class="text-h6">List</div>
+                                <div class="listContainer">
+                                    <EventCard v-for="item in store.events" :key="item.id" :event="item"></EventCard>
+                                </div>
+                            </q-tab-panel>
+
+                            <q-tab-panel name="grid">
+                                <div class="text-h6">Grid</div>
+                                <div class="gridContainer">
+                                    <EventCard v-for="item in store.events" :key="item.id" :event="item"></EventCard>
+                                </div>
+                            </q-tab-panel>
+
+                            <q-tab-panel name="calendar">
+                                <div class="text-h6">Calendar</div>
+                                <div class="calendarContainer">
+                                    <MyCalendar :events="store.events"></MyCalendar>
+                                </div>
+                            </q-tab-panel>
+                        </q-tab-panels>
+
+                    </q-card>
+                </div>
             </div>
 
         </section>
@@ -123,9 +157,24 @@ while (i <= store.gallery.length) {
     </q-page>
 </template>
 
-<style scoped>
+<style>
 .productImg {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.panelContainer {
+    width: 100%;
+    height: auto;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .calendarContainer {
