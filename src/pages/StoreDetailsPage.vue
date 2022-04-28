@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import data from '../../gamestores.js'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 import LightboxDialog from '../components/LightboxDialog.vue'
+import MyCalendar from '../components/MyCalendar.vue';
 const route = useRoute()
 
 const store = data.find(store => store.id === route.params.id);
@@ -91,7 +92,10 @@ while (i <= store.gallery.length) {
         </section>
         <section>
             <h3>Event Calendar</h3>
-            <p>calendar goes here</p>
+            <div class="calendarContainer">
+                <MyCalendar :events="store.events"></MyCalendar>
+            </div>
+
         </section>
         <hr />
 
@@ -110,5 +114,12 @@ while (i <= store.gallery.length) {
 <style scoped>
 .productImg {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.calendarContainer {
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    background-color: rgba(162, 127, 127, 0.3);
 }
 </style>

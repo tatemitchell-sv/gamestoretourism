@@ -82,11 +82,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -240,11 +241,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -398,11 +400,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -556,11 +559,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -714,11 +718,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -872,11 +877,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -1030,11 +1036,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
@@ -1188,11 +1195,12 @@ export default [
     ],
     events: [
       {
-        name: "",
-        type: "",
-        info: "",
-        fee: "",
-        time: "",
+        start: "2022-04-29 19:00",
+        end: "2022-04-29 23:00",
+        title: "New Capenna Commander Tournament",
+        content:
+          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
+        class: "MTG",
       },
     ],
     gallery: [
