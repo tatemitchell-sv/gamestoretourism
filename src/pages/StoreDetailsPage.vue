@@ -47,13 +47,17 @@ while (i <= store.gallery.length) {
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        Address:
-                        {{ store.locations.streetAddress1 }}
-                        {{ store.locations.streetAddress2 }}
-                        {{ store.locations.city }}
-                        {{ store.locations.state }}
-                        {{ store.locations.zip }}
+                        Address: <a :href="store.googleMapsLink" target="_blank">
+                            {{ store.locations.streetAddress1 }}
+                            {{ store.locations.streetAddress2 }}
+                            {{ store.locations.city }}
+                            {{ store.locations.state }}
+                            {{ store.locations.zip }}
+                        </a>
                     </div>
+
+                    <div class="row"><a :href="`tel:${store.phonenumber}`">{{ store.phonenumber }}</a></div>
+                    <div class="row">{{ store.website }}</div>
 
                     <div class="row">Hours of Operation:</div>
                     <div class="row">
@@ -78,6 +82,9 @@ while (i <= store.gallery.length) {
                         {{ store.hours[6].day }}: {{ store.hours[6].open }} - {{ store.hours[6].close }}
                     </div>
                 </div>
+                <div class="col" v-html="store.googleMapsEmbed">
+
+                </div>
             </div>
         </section>
 
@@ -92,6 +99,11 @@ while (i <= store.gallery.length) {
         </section>
         <section>
             <h3>Event Calendar</h3>
+            <q-btn-group push>
+                <q-btn push label="list" icon="fa-solid fa-list" />
+                <q-btn push label="grid" icon="fa-solid fa-grip" />
+                <q-btn push label="calendar" icon="fa-solid fa-calendar-day" />
+            </q-btn-group>
             <div class="calendarContainer">
                 <MyCalendar :events="store.events"></MyCalendar>
             </div>

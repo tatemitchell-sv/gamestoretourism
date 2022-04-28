@@ -22,7 +22,10 @@ export default [
       { day: "Saturday", open: "11AM", close: "9PM" },
       { day: "Sunday", open: "", close: "" },
     ],
-    website: "",
+    website: "https://www.facebook.com/RoundTableGamesIF/",
+    googleMapsLink: "https://goo.gl/maps/nHh59G1nWrGZ6PNC8",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5943271964793!2d-112.02629208466394!3d43.489935779127265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545fc2bcd81ccf%3A0x8e6c91c90c7bff64!2sRound%20Table%20Games!5e0!3m2!1sen!2sus!4v1651170255384!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "roundtablethumbnail_wnzooo",
       imgId: "v1650404501",
@@ -182,6 +185,9 @@ export default [
       { day: "Sunday", open: "", close: "" },
     ],
     website: "https://m.facebook.com/AStreetGames/",
+    googleMapsLink: "https://goo.gl/maps/qZZQUrPqU8QXBLUUA",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4749959597425!2d-112.04325058466385!3d43.49242567912708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594fd76f9bdf%3A0x17aab49ebd3785b8!2sA%20Street%20Games!5e0!3m2!1sen!2sus!4v1651170338870!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "astreetthumbnail_lrlwnz_xqec3d",
       imgId: "v1650927666",
@@ -341,6 +347,9 @@ export default [
       { day: "Sunday", open: "11AM", close: "9PM" },
     ],
     website: "http://www.madnessgames.com/",
+    googleMapsLink: "https://goo.gl/maps/5JpVbmoi9GJJM3UVA",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.682986057!2d-96.73455008499195!3d33.03848148089384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c18642107149f%3A0x7b175fc8b0e00ebc!2sMadness%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172245703!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "madnessthumbnail_smlvw9",
       imgId: "v1650404500",
@@ -500,6 +509,9 @@ export default [
       { day: "Sunday", open: "12PM", close: "6PM" },
     ],
     website: "https://generation-x-comics-and-games.myshopify.com/",
+    googleMapsLink: "https://goo.gl/maps/uv8WvfrMjTPT5159A",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.7853722823!2d-97.11190438499713!3d32.85093398094978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7fd1134ce54b%3A0x7003390f87cd40e!2sGeneration%20X%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172462946!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "genxgames_kqtcig",
       imgId: "v1650931771",
@@ -659,6 +671,9 @@ export default [
       { day: "Sunday", open: "12PM", close: "8PM" },
     ],
     website: "http://boardwalk-games.com/",
+    googleMapsLink: "https://goo.gl/maps/94a2jAeUpSZq2SVL6",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.7284819753236!2d-96.85589618499345!3d32.98456458090984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c240e578bbde1%3A0x84564e3bf40a5d7b!2sBoardwalk%20Games!5e0!3m2!1sen!2sus!4v1651172540544!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "boardwalkgames_om9e0j",
       imgId: "v1650997609",
@@ -818,6 +833,9 @@ export default [
       { day: "Sunday", open: "", close: "" },
     ],
     website: "https://m.facebook.com/GamePulse/",
+    googleMapsLink: "https://goo.gl/maps/bbj55hJf2mYgRAkv7",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4463011326357!2d-111.78422038465213!3d43.82584327911571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4ffd0ebaf7%3A0xfb506d9a730449fb!2sGamePulse!5e0!3m2!1sen!2sus!4v1651172577976!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "gamepulse_l1cgdg",
       imgId: "v1650998009",
@@ -977,6 +995,9 @@ export default [
       { day: "Sunday", open: "", close: "" },
     ],
     website: "http://www.discountgamesinc.com/",
+    googleMapsLink: "https://goo.gl/maps/sgGVqwGoE791skhC9",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.701988525525!2d-112.03608738466396!3d43.487689279127295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545eb18363b1e3%3A0x6c87e5c2cac51dfc!2sGameopolis!5e0!3m2!1sen!2sus!4v1651172689876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "gameopolis_adxvyh",
       imgId: "v1650998556",
@@ -1136,6 +1157,9 @@ export default [
       { day: "Sunday", open: "", close: "" },
     ],
     website: "https://www.innercirclecomicsandgames.com/",
+    googleMapsLink: "https://goo.gl/maps/toxGfhpPCvg1yXQt5",
+    googleMapsEmbed:
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.923460218931!2d-111.99372768466415!3d43.48306767912747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545f4174e937a5%3A0x7408cfae37de9b3!2sInner%20Circle%20Comics%20and%20Games!5e0!3m2!1sen!2sus!4v1651172746098!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
       imgName: "innercircle_yikv0n",
       imgId: "v1651000494",
