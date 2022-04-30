@@ -14,6 +14,17 @@ const routes = [
   },
 
   {
+    path: "/searchresults",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/searchresults",
+        component: () => import("src/pages/SearchPage.vue"),
+      },
+    ],
+  },
+
+  {
     path: "/browse",
     component: () => import("layouts/MainLayout.vue"),
     children: [

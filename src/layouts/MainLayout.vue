@@ -1,10 +1,12 @@
 <script setup>
 import EssentialLink from 'components/EssentialLink.vue'
 import ExternalLink from 'components/ExternalLink.vue'
+import API from '../utils/API.js'
+import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
+const router = useRouter();
 let leftDrawerOpen = ref(false);
-console.log('open =', leftDrawerOpen.value);
 
 const essentialLinksList = [
   {
@@ -61,6 +63,12 @@ const toggleLeftDrawer = () => {
   console.log('open =', leftDrawerOpen.value);
 };
 
+let searchString = ref('');
+
+const onSubmit = (e) => {
+  router.push(`/searchresults?searchString=${searchString.value}`)
+};
+
 </script>
 
 <template>
@@ -73,7 +81,12 @@ const toggleLeftDrawer = () => {
           <q-btn to="/">GameStore Finder</q-btn>
         </q-toolbar-title>
 
-        <q-btn to="/search">Search</q-btn>
+        <q-form id="searchBarForm" @submit="onSubmit">
+          <q-input id="searchBar" dark dense standout v-model="searchString" placeholder="search"
+            input-class="text-left" class="q-ml-md">
+            <q-btn type="submit" round color="purple" glossy icon="search" />
+          </q-input>
+        </q-form>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -126,5 +139,9 @@ const toggleLeftDrawer = () => {
 .navlink {
   padding: 0px 20px;
   font-size: 24px;
+}
+
+#searchBarForm {
+  margin: 0px 10px 0px 10px;
 }
 </style>

@@ -1,7 +1,71 @@
 <script setup>
 import StoreCard from 'src/components/StoreCard.vue';
-import data from "../../gamestores.js"
+import API from '../utils/API.js'
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+
+let data = ref([{
+  name: "",
+  id: "",
+  locations: {
+    latitude: "",
+    longitude: "",
+    streetAddress1: "",
+    streetAddress2: "",
+    city: "",
+    state: "",
+    zip: "",
+  },
+  phonenumber: "",
+  hours: [{ day: "", open: "", close: "" }],
+  website: "",
+  googleMapsLink: "",
+  googleMapsEmbed: "",
+  thumbnail: {
+    imgName: "",
+    imgId: "",
+    imgType: "",
+  },
+  productsServices: [
+    {
+      name: "",
+      info: "",
+      img: { imgName: "", imgId: "", imgType: "" },
+      link: "",
+      iconWhite: "",
+      iconBlack: "",
+    },
+  ],
+  events: [
+    {
+      id: "",
+      start: "",
+      end: "",
+      title: "",
+      content: "",
+      class: "",
+      img: {
+        imgName: "",
+        imgId: "",
+        imgType: "",
+      },
+    },
+  ],
+  gallery: [
+    {
+      imgName: "",
+      imgId: "",
+      imgType: "",
+    },
+  ],
+}]);
+
+const loadData = async () => {
+  const response = await API.getAllStores();
+  data.value = response.data;
+};
+loadData();
+
 </script>
 
 <template>
@@ -31,11 +95,11 @@ import { RouterLink } from 'vue-router';
         </div>
 
         <div class="col">
-          <StoreCard :store="data[1]" />
+          <StoreCard :store="data[0]" />
         </div>
 
         <div class="col">
-          <StoreCard :store="data[3]" />
+          <StoreCard :store="data[0]" />
         </div>
 
       </div>

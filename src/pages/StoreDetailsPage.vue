@@ -1,37 +1,104 @@
 <script setup>
 import { useRoute } from 'vue-router';
 import { ref } from 'vue'
-import data from '../../gamestores.js'
+import API from '../utils/API.js'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 import LightboxDialog from '../components/LightboxDialog.vue'
 import MyCalendar from '../components/MyCalendar.vue';
 import EventCard from '../components/EventCard.vue';
 const route = useRoute()
 
-let tab = ref('list');
-
-const store = data.find(store => store.id === route.params.id);
-
 // slide is for carousel index
 let slide = ref(1);
 
+// tab is for events qtabs
+let tab = ref('list');
 
-// "gridify" images in gallery array (make multidimensional)
+// galleryGridify variables
 const colsPerRow = 3;
 let rows = [];
 let i = 0;
-while (i <= store.gallery.length) {
-    let row = []
-    for (let j = 0; j < colsPerRow; j++) {
-        if (store.gallery.length > i + j) {
-            row.push(store.gallery[i + j]);
-            store.gallery[i + j].slideIndex = i + j + 1;
+
+// pre load store objrct
+let store = ref({
+    name: "",
+    id: "",
+    locations: {
+        latitude: "",
+        longitude: "",
+        streetAddress1: "",
+        streetAddress2: "",
+        city: "",
+        state: "",
+        zip: "",
+    },
+    phonenumber: "",
+    hours: [{ day: "", open: "", close: "" }],
+    website: "",
+    googleMapsLink: "",
+    googleMapsEmbed: "",
+    thumbnail: {
+        imgName: "",
+        imgId: "",
+        imgType: "",
+    },
+    productsServices: [
+        {
+            name: "",
+            info: "",
+            img: { imgName: "", imgId: "", imgType: "" },
+            link: "",
+            iconWhite: "",
+            iconBlack: "",
+        },
+    ],
+    events: [
+        {
+            id: "",
+            start: "",
+            end: "",
+            title: "",
+            content: "",
+            class: "",
+            img: {
+                imgName: "",
+                imgId: "",
+                imgType: "",
+            },
+        },
+    ],
+    gallery: [
+        {
+            imgName: "",
+            imgId: "",
+            imgType: "",
+        },
+    ],
+});
+
+const loadData = async () => {
+
+    const response = await API.getStoreById(route.params.id);
+    store.value = response.data;
+
+    // "gridify" images in gallery array (make multidimensional)
+    const gridifyImageGallery = () => {
+
+        while (i <= store.value.gallery.length) {
+            let row = []
+            for (let j = 0; j < colsPerRow; j++) {
+                if (store.value.gallery.length > i + j) {
+                    row.push(store.value.gallery[i + j]);
+                    store.value.gallery[i + j].slideIndex = i + j + 1;
+                }
+            }
+            rows.push(row);
+            i += colsPerRow;
         }
     }
-    rows.push(row);
-    i += colsPerRow;
-    console.log('i =' + i)
-}
+    gridifyImageGallery();
+};
+loadData();
 
 </script>
 
@@ -63,26 +130,8 @@ while (i <= store.gallery.length) {
                     <div class="row"><a :href="store.website" target="_blank">{{ store.website }}</a></div>
 
                     <div class="row">Hours of Operation:</div>
-                    <div class="row">
-                        {{ store.hours[0].day }}: {{ store.hours[0].open }} - {{ store.hours[0].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[1].day }}: {{ store.hours[1].open }} - {{ store.hours[1].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[2].day }}: {{ store.hours[2].open }} - {{ store.hours[2].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[3].day }}: {{ store.hours[3].open }} - {{ store.hours[3].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[4].day }}: {{ store.hours[4].open }} - {{ store.hours[4].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[5].day }}: {{ store.hours[5].open }} - {{ store.hours[5].close }}
-                    </div>
-                    <div class="row">
-                        {{ store.hours[6].day }}: {{ store.hours[6].open }} - {{ store.hours[6].close }}
+                    <div v-for="(item, index) in store.hours" :key="item.day" class="row">
+                        {{ store.hours[index].day }}: {{ store.hours[index].open }} - {{ store.hours[index].close }}
                     </div>
                 </div>
                 <div class="col" v-html="store.googleMapsEmbed">
@@ -119,14 +168,16 @@ while (i <= store.gallery.length) {
                             <q-tab-panel name="list">
                                 <div class="text-h6">List</div>
                                 <div class="listContainer">
-                                    <EventCard v-for="item in store.events" :key="item.id" :event="item"></EventCard>
+                                    <EventCard v-for="item in store.events" :key="item.id" :event="item">
+                                    </EventCard>
                                 </div>
                             </q-tab-panel>
 
                             <q-tab-panel name="grid">
                                 <div class="text-h6">Grid</div>
                                 <div class="gridContainer">
-                                    <EventCard v-for="item in store.events" :key="item.id" :event="item"></EventCard>
+                                    <EventCard v-for="item in store.events" :key="item.id" :event="item">
+                                    </EventCard>
                                 </div>
                             </q-tab-panel>
 
