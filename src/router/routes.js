@@ -33,6 +33,44 @@ const routes = [
   },
 
   {
+    path: "/login",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "/login", component: () => import("pages/LogInPage.vue") },
+    ],
+  },
+
+  {
+    path: "/account",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/account",
+        component: () => import("pages/AccountPage.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/notauthorized",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/notauthorized",
+        component: () => import("pages/NotAuthorized.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/signup",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "/signup", component: () => import("pages/SignUpPage.vue") },
+    ],
+  },
+
+  {
     path: "/store/:id",
     component: () => import("layouts/MainLayout.vue"),
     children: [

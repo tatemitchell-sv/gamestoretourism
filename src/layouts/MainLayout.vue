@@ -2,12 +2,36 @@
 import EssentialLink from 'components/EssentialLink.vue'
 import ExternalLink from 'components/ExternalLink.vue'
 import API from '../utils/API.js'
+import { RouterLink } from 'vue-router'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
 const router = useRouter();
-let leftDrawerOpen = ref(false);
 
+// show account or login
+let loggedIn = ref(localStorage.getItem('user') !== null);
+let username = ref(localStorage.getItem('user'))
+console.log('logged in: ', loggedIn.value);
+console.log('username: ', username.value);
+
+
+const logIn = (formData) => {
+  localStorage.setItem('user', formData.fieldUserName);
+  router.push('/account')
+  console.log('logged in: ', loggedIn.value);
+  console.log('username: ', username.value);
+}
+
+const logOut = () => {
+  localStorage.removeItem('user');
+  loggedIn.value = localStorage.getItem('user') !== null;
+  username.value = localStorage.getItem('user');
+  router.push('/')
+  console.log('logged in: ', loggedIn.value);
+  console.log('username: ', username.value);
+}
+
+// sidebar links
 const essentialLinksList = [
   {
     title: 'Home',
@@ -27,7 +51,7 @@ const essentialLinksList = [
     icon: 'fa-solid fa-list',
     link: '/browse'
   },
-]
+];
 const externalLinksList = [
   {
     title: 'Magic: The Gathering Official Website',
@@ -53,18 +77,18 @@ const externalLinksList = [
     icon: 'img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png',
     link: 'https://www.yugioh-card.com/en/'
   },
-]
-
+];
 let essentialLinks = essentialLinksList;
 let externalLinks = externalLinksList;
 
+// drawer menu toggle
+let leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value
-  console.log('open =', leftDrawerOpen.value);
 };
 
+// search button submit
 let searchString = ref('');
-
 const onSubmit = (e) => {
   router.push(`/searchresults?searchString=${searchString.value}`)
 };
@@ -88,7 +112,45 @@ const onSubmit = (e) => {
           </q-input>
         </q-form>
 
-        <div>Quasar v{{ $q.version }}</div>
+
+        <div v-if="!loggedIn">
+          <RouterLink class="navLink" to="/login">
+            <div>Log In</div>
+          </RouterLink>
+          <div>
+            <q-btn to="/signup">Sign Up</q-btn>
+          </div>
+        </div>
+
+        <div v-else>
+
+          <q-btn-dropdown class="glossy" color="accent" label="Account">
+            <div class="row no-wrap q-pa-md">
+              <div class="column">
+                <div class="row text-h6 q-mb-md">Links</div>
+                <div class="row">
+                  <RouterLink to="/account">Settings</RouterLink>
+                </div>
+                <div class="row">
+                  <RouterLink :to="`/store/${username}`">See Store</RouterLink>
+                </div>
+              </div>
+
+              <q-separator vertical inset class="q-mx-lg" />
+
+              <div class="column items-center">
+                <q-avatar size="72px">
+                  <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                </q-avatar>
+
+                <div class="text-subtitle1 q-mt-md q-mb-xs">{{ username }}</div>
+
+                <q-btn color="accent" label="Logout" push size="sm" v-close-popup @click="logOut" />
+              </div>
+            </div>
+          </q-btn-dropdown>
+        </div>
+
       </q-toolbar>
     </q-header>
 
@@ -123,7 +185,7 @@ const onSubmit = (e) => {
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <router-view @loggingInOut="logIn" />
     </q-page-container>
 
     <q-footer>
@@ -143,5 +205,25 @@ const onSubmit = (e) => {
 
 #searchBarForm {
   margin: 0px 10px 0px 10px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:active {
+  color: rgb(164, 164, 164);
+  text-decoration: none;
 }
 </style>
