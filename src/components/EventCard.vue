@@ -2,7 +2,6 @@
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
 defineProps({ event: Object });
 
-const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 </script>
 
 <template>
@@ -14,9 +13,6 @@ const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
             <div class="eventContent" v-html="event.content"></div>
         </q-card-section>
 
-        <q-card-section class="q-pt-none">
-            <p>{{ lorem }}</p>
-        </q-card-section>
     </q-card>
 </template>
 

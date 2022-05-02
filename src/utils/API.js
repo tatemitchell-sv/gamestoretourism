@@ -21,7 +21,10 @@ export default {
     });
   },
 
-  addEvent: (newEvent) => {
-    axios.post("http://localhost:8081/createevent", newEvent);
+  createEvent: (newEvent, storeID) => {
+    return axios.post("http://localhost:8081/createevent", {
+      newEvent,
+      storeID,
+    });
   },
 };

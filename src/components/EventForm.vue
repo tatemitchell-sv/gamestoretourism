@@ -9,7 +9,7 @@ const cancelForm = () => {
     emits('cancel');
 }
 const submitForm = () => {
-    emits('submit');
+    emits('submit', formData.value);
 };
 
 let formData = ref({ ...props.event });
@@ -43,6 +43,36 @@ let formData = ref({ ...props.event });
                     <div class="col-2">End: </div>
                     <div class="col">
                         <q-input dense v-model="formData.end" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Content (html): </div>
+                    <div class="col">
+                        <q-input dense v-model="formData.content" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Class: </div>
+                    <div class="col">
+                        <q-input dense v-model="formData.class" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Image Name: </div>
+                    <div class="col">
+                        <q-input dense v-model="formData.img.imgName" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Image ID: </div>
+                    <div class="col">
+                        <q-input dense v-model="formData.img.imgId" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Image Type: </div>
+                    <div class="col">
+                        <q-input dense v-model="formData.img.imgType" />
                     </div>
                 </div>
 

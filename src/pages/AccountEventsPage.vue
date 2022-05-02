@@ -87,6 +87,10 @@ const loadData = async () => {
 };
 loadData();
 
+const updateData = (newStoreData) => {
+    store.value = newStoreData.data;
+    console.log('new store data in grandparent is = ', newStoreData)
+};
 
 </script>
 
@@ -105,7 +109,7 @@ loadData();
             <DeleteEvent :event="event" />
         </div>
     </div>
-    <EventCreator />
+    <EventCreator :storeID="store.id" @newStore="updateData" />
     <hr />
 
     <h3>Preview Events</h3>

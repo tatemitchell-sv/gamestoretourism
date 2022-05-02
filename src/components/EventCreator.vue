@@ -1,6 +1,9 @@
 <script setup>
-import { ref } from 'vue';
+import { defineEmits, ref } from 'vue';
+import API from '../utils/API.js';
 import EventForm from './EventForm.vue';
+const emits = defineEmits(['newStore'])
+const props = defineProps({ storeID: String })
 
 const btnLabel = '+ New Event';
 const operationTitle = 'Create Event';
@@ -21,8 +24,11 @@ let event = ref({
 });
 
 // sumbit form functionality
-const createEvent = () => {
-    console.log('new event created!')
+const createEvent = async (formData) => {
+    event.value = formData;
+    const newStoreData = await API.createEvent(event.value, props.storeID);
+    emits('newStore', newStoreData);
+    console.log('new event created!  ', event.value);
 };
 
 </script>
