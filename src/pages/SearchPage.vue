@@ -69,8 +69,7 @@ const loadData = async () => {
     const response = await API.searchStore(route.query.searchString);
     data.value = response.data;
     ifResults.value = true;
-    console.log('response.data is: ', response.data);
-    console.log('route query: ', route.query);
+
 };
 loadData();
 

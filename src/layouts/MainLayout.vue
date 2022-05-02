@@ -11,9 +11,6 @@ const router = useRouter();
 // show account or login
 let loggedIn = ref(localStorage.getItem('user') !== null);
 let username = ref(localStorage.getItem('user'))
-console.log('logged in: ', loggedIn.value);
-console.log('username: ', username.value);
-
 
 const logIn = (formData) => {
   localStorage.setItem('user', formData.fieldUserName);

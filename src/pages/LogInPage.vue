@@ -1,6 +1,5 @@
 <script setup>
 import { defineEmits, ref } from 'vue';
-const props = defineProps({ logInOut: Function })
 const emit = defineEmits(['loggingInOut']);
 
 // form data

@@ -1,10 +1,12 @@
 <script setup>
+import EventEditor from '../components/EventEditor.vue'
 import { defineEmits, ref } from 'vue';
-import { useRouter } from 'vue-router';
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import API from '../utils/API.js';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
 const router = useRouter();
+
+// log out capacity
 const emit = defineEmits(['loggingInOut']);
 
 // if not logged in, reroute
@@ -77,42 +79,20 @@ const loadData = async () => {
 
     const response = await API.getStoreById(localStorage.getItem('user'));
     store.value = response.data;
-
 };
 loadData();
+
+let version = ref(0);
+
+const incVersion = () => {
+    version.value++;
+};
 
 </script>
 
 <template>
-    <h2>Account Settings</h2>
-    <div class="row">
-        <div class="col">
-            <img
-                :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 200, 300)">
-            {{ store.name }}
-        </div>
-        <q-separator vertical inset class="q-mx-lg" />
-        <div class="col">
-            <div class="row">
-                <RouterLink to="/account/events">Manage Events</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account/ps">Manage Products and Services</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account/gallery">Manage Gallery</RouterLink>
-            </div>
-            <q-separator inset class="q-mx-lg" />
-            <div class="row">
-                <RouterLink to="/account/edit">Edit Store Info</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account">Edit Account Info</RouterLink>
-            </div>
-        </div>
-    </div>
+    <h1>Gallery</h1>
 
-    <RouterLink :to="`/store/${store.id}`">See your store!</RouterLink>
 </template>
 
 <style scoped>

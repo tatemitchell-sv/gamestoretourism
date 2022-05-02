@@ -52,6 +52,50 @@ const routes = [
   },
 
   {
+    path: "/account/edit",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/account/edit",
+        component: () => import("pages/EditStorePage.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/account/events",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/account/events",
+        component: () => import("pages/AccountEventsPage.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/account/ps",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/account/ps",
+        component: () => import("pages/AccountPSPage.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/account/gallery",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/account/gallery",
+        component: () => import("pages/AccountGalleryPage.vue"),
+      },
+    ],
+  },
+
+  {
     path: "/notauthorized",
     component: () => import("layouts/MainLayout.vue"),
     children: [
