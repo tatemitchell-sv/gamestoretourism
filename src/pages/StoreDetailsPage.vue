@@ -6,6 +6,7 @@ import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
 import LightboxDialog from '../components/LightboxDialog.vue'
 import MyCalendar from '../components/MyCalendar.vue';
 import EventCard from '../components/EventCard.vue';
+import EventDisplay from 'src/components/EventDisplay.vue';
 const route = useRoute()
 
 // slide is for carousel index
@@ -148,53 +149,15 @@ loadData();
                         :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, product.img.imgType, 50, 150)">
                 </div>
             </div>
+            <hr />
         </section>
+
         <section>
             <h3>Events</h3>
-
-            <div class="q-pa-md">
-                <div class="q-gutter-y-md">
-                    <q-card class="panelContainer">
-                        <q-tabs v-model="tab" dense class="text-grey" active-color="primary" indicator-color="primary"
-                            align="justify" narrow-indicator>
-                            <q-tab name="list" label="List" icon="fa-solid fa-list" />
-                            <q-tab name="grid" label="Grid" icon="fa-solid fa-grip" />
-                            <q-tab name="calendar" label="Calendar" icon="fa-solid fa-calendar-day" />
-                        </q-tabs>
-
-                        <q-separator />
-
-                        <q-tab-panels v-model="tab" animated>
-                            <q-tab-panel name="list">
-                                <div class="text-h6">List</div>
-                                <div class="listContainer">
-                                    <EventCard v-for="item in store.events" :key="item.id" :event="item">
-                                    </EventCard>
-                                </div>
-                            </q-tab-panel>
-
-                            <q-tab-panel name="grid">
-                                <div class="text-h6">Grid</div>
-                                <div class="gridContainer">
-                                    <EventCard v-for="item in store.events" :key="item.id" :event="item">
-                                    </EventCard>
-                                </div>
-                            </q-tab-panel>
-
-                            <q-tab-panel name="calendar">
-                                <div class="text-h6">Calendar</div>
-                                <div class="calendarContainer">
-                                    <MyCalendar :events="store.events"></MyCalendar>
-                                </div>
-                            </q-tab-panel>
-                        </q-tab-panels>
-
-                    </q-card>
-                </div>
-            </div>
-
+            <EventDisplay :store="store" />
+            <hr />
         </section>
-        <hr />
+
 
         <section>
             <h3>Crazy Gallery!!!</h3>
@@ -211,27 +174,5 @@ loadData();
 <style>
 .productImg {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-.panelContainer {
-    width: 100%;
-    height: auto;
-}
-
-.listContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.calendarContainer {
-    width: 80%;
-    margin: auto;
-    height: 700px;
-    background-color: rgba(162, 127, 127, 0.3);
 }
 </style>

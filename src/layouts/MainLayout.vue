@@ -182,7 +182,7 @@ const onSubmit = (e) => {
     </q-drawer>
 
     <q-page-container>
-      <router-view @loggingInOut="logIn" />
+      <router-view @loggingIn="logIn" />
     </q-page-container>
 
     <q-footer>

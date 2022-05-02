@@ -1,15 +1,15 @@
 <script setup>
 import { defineEmits, ref } from 'vue';
-const props = defineProps({ btnLabel: String, event: Object })
-const emit = defineEmits(['cancel, submit']);
+const props = defineProps({ btnLabel: String, operationTitle: String, event: Object })
+const emits = defineEmits(['cancel, submit']);
 
 let prompt = ref(false);
 
 const cancelForm = () => {
-    emit('cancel');
+    emits('cancel');
 }
 const submitForm = () => {
-    emit('submit');
+    emits('submit');
 };
 
 let formData = ref({ ...props.event });
@@ -22,7 +22,7 @@ let formData = ref({ ...props.event });
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>
-                <div class="text-h6">Edit Event Info</div>
+                <div class="text-h6">{{ props.operationTitle }}</div>
             </q-card-section>
 
             <q-card-section class="q-pt-none">

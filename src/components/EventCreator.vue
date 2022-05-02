@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import EventForm from './EventForm.vue';
 
 const btnLabel = '+ New Event';
+const operationTitle = 'Create Event';
 
 // new empty event
 let event = ref({
@@ -19,10 +20,15 @@ let event = ref({
     },
 });
 
+// sumbit form functionality
+const createEvent = () => {
+    console.log('new event created!')
+};
+
 </script>
 
 <template>
-    <EventForm :btnLabel="btnLabel" :event="event" />
+    <EventForm :btnLabel="btnLabel" :operationTitle="operationTitle" :event="event" @submit="createEvent" />
 </template>
 
 <style scoped>

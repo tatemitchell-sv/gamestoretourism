@@ -1,6 +1,6 @@
 <script setup>
 import { defineEmits, ref } from 'vue';
-const emit = defineEmits(['loggingInOut']);
+const emits = defineEmits(['loggingIn']);
 
 // form data
 let formData = ref({
@@ -10,7 +10,7 @@ let formData = ref({
 
 
 const onSubmit = () => {
-    emit('loggingInOut', formData.value)
+    emits('loggingIn', formData.value)
 };
 
 </script>

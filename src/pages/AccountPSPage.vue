@@ -1,7 +1,7 @@
 <script setup>
 import { defineEmits, ref } from 'vue';
 // log out capacity
-const emit = defineEmits(['loggingInOut']);
+const emits = defineEmits(['loggingIn']);
 </script>
 
 <template>

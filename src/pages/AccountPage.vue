@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 import API from '../utils/API.js';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
 const router = useRouter();
-const emit = defineEmits(['loggingInOut']);
+const emits = defineEmits(['loggingIn']);
 
 // if not logged in, reroute
 const authenticate = () => {

@@ -20,4 +20,8 @@ export default {
       ...searchCriteria,
     });
   },
+
+  addEvent: (newEvent) => {
+    axios.post("http://localhost:8081/createevent", newEvent);
+  },
 };

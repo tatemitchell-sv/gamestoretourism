@@ -6,7 +6,7 @@ import API from '../utils/API.js';
 const router = useRouter();
 
 // log out capacity
-const emit = defineEmits(['loggingInOut']);
+const emits = defineEmits(['loggingIn']);
 
 // if not logged in, reroute
 const authenticate = () => {
