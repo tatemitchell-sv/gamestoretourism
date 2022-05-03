@@ -1,13 +1,17 @@
 <script setup>
 import { ref } from 'vue';
-const props = defineProps({ event: Object })
+import API from '../utils/API.js'
+const emits = defineEmits(['updatedStore'])
+const props = defineProps({ event: Object, storeID: String })
 
 let prompt = ref(false);
 
 let data = ref({ ...props.event });
 
-const deleteEvent = () => {
-    console.log('event deleted!');
+const deleteEvent = async () => {
+    console.log('event deleted!', props.event);
+    const updatedStoreData = await API.deleteEvent(props.event.id, props.storeID);
+    emits('updatedStore', updatedStoreData);
 };
 </script>
 

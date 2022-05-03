@@ -27,4 +27,19 @@ export default {
       storeID,
     });
   },
+
+  editEvent: (edittedEvent, storeID) => {
+    return axios.put("http://localhost:8081/editevent", {
+      edittedEvent,
+      storeID,
+    });
+  },
+
+  deleteEvent: (eventID, storeID) => {
+    console.log("event id: ", eventID);
+    console.log("store id: ", storeID);
+    return axios.delete("http://localhost:8081/deleteevent", {
+      data: { eventID, storeID },
+    });
+  },
 };

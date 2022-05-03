@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue';
+import API from '../utils/API.js'
 import EventForm from './EventForm.vue';
-const props = defineProps({ event: Object });
+const emits = defineEmits(['updatedStore'])
+const props = defineProps({ event: Object, storeID: String });
 
 const btnLabel = 'edit';
 const operationTitle = 'Edit Event';
@@ -13,8 +15,10 @@ const incVersion = () => {
 };
 
 // sumbit form functionality
-const editEvent = () => {
-    console.log('event was editted!')
+const editEvent = async (formData) => {
+    const updatedStoreData = await API.editEvent(formData, props.storeID);
+    emits('updatedStore', updatedStoreData);
+    console.log('event was editted!', updatedStoreData);
 };
 
 </script>

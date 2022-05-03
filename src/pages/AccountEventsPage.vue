@@ -87,9 +87,9 @@ const loadData = async () => {
 };
 loadData();
 
-const updateData = (newStoreData) => {
-    store.value = newStoreData.data;
-    console.log('new store data in grandparent is = ', newStoreData)
+const updateData = (updatedStoreData) => {
+    store.value = updatedStoreData.data;
+    console.log('new store data in grandparent is = ', updatedStoreData)
 };
 
 </script>
@@ -103,13 +103,13 @@ const updateData = (newStoreData) => {
             {{ event.title }}
         </div>
         <div class="col">
-            <EventEditor :event="event" />
+            <EventEditor :event="event" :storeID="store.id" @updatedStore="updateData" />
         </div>
         <div class="col">
-            <DeleteEvent :event="event" />
+            <DeleteEvent :event="event" :storeID="store.id" @updatedStore="updateData" />
         </div>
     </div>
-    <EventCreator :storeID="store.id" @newStore="updateData" />
+    <EventCreator :storeID="store.id" @updatedStore="updateData" />
     <hr />
 
     <h3>Preview Events</h3>
