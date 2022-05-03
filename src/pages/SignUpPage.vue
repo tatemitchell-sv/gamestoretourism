@@ -1,21 +1,27 @@
 <script setup>
-import { ref } from 'vue';
+import { defineEmits, ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { RouterLink } from 'vue-router';
+import API from '../utils/API.js';
+import StoreCreator from '../components/StoreCreator.vue';
+const router = useRouter();
 
-// form data
-let fieldEmail = ref('');
-let fieldUserName = ref('');
-let fieldPassword = ref('');
-let fieldCPassword = ref('');
+// log in capacity
+const emits = defineEmits(['loggingIn']);
+let formData = ref({
+    fieldUserName: '',
+    fieldPassword: '',
+});
 
+const onCreateStore = (updatedStoreData) => {
+    console.log('updatedStoreData in SU Page = ', updatedStoreData.id);
+    formData.value.fieldUserName = updatedStoreData.id;
+    emits('loggingIn', formData.value);
+};
 </script>
 
 <template>
-    <h2>Sign Up</h2>
-    <q-input outlined v-model="fieldEmail" label="email" />
-    <q-input outlined v-model="fieldUserName" label="username" />
-    <q-input outlined v-model="fieldPassword" label="password" />
-    <q-input outlined v-model="fieldCPassword" label=" confirm password" />
-    <q-btn type="submit" value="Sign Up" label="Sign Up" />
+    <StoreCreator @updatedStore="onCreateStore" />
 </template>
 
 <style scoped>

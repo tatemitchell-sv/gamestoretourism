@@ -1,7 +1,7 @@
 <script setup>
 import { defineEmits, ref } from 'vue';
 const props = defineProps({ btnLabel: String, operationTitle: String, event: Object })
-const emits = defineEmits(['cancel, submit']);
+const emits = defineEmits(['cancel', 'submit']);
 
 let prompt = ref(false);
 

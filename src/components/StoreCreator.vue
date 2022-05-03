@@ -1,21 +1,10 @@
 <script setup>
-import { defineEmits, ref } from 'vue';
-import { useRouter } from 'vue-router';
-import { RouterLink } from 'vue-router';
-import API from '../utils/API.js';
-import StoreEditor from '../components/StoreEditor.vue';
-const router = useRouter();
+import { ref } from 'vue';
+import API from '../utils/API.js'
+import StoreInfoForm from './StoreInfoForm.vue';
+const emits = defineEmits(['updatedStore', 'loggingIn'])
 
-// log out capacity
-const emits = defineEmits(['loggingIn']);
-
-// if not logged in, reroute
-const authenticate = () => {
-    if (localStorage.getItem("user") === null) {
-        router.push("/notauthorized");
-    }
-};
-authenticate();
+const operationTitle = 'Create a';
 
 // temporary store object
 let store = ref({
@@ -74,24 +63,24 @@ let store = ref({
     ],
 });
 
-// API request for store data
-const loadData = async () => {
-
-    const response = await API.getStoreById(localStorage.getItem('user'));
-    store.value = response.data;
-    console.log('store is: ', store.value.name)
+// cancel form functionality
+let version = ref(0);
+const incVersion = () => {
+    version.value++;
 };
-loadData();
 
-const updateData = (updatedStoreData) => {
-    store.value = updatedStoreData.data;
-    console.log('new store data in grandparent is = ', updatedStoreData)
+// sumbit form functionality
+const createStore = async (formData) => {
+    const updatedStoreData = await API.createStore(formData);
+    emits('updatedStore', updatedStoreData.data);
+    console.log('store was editted!', updatedStoreData.data);
 };
 
 </script>
 
 <template>
-    <StoreEditor :key="store.id" :store="store" @updatedStore="updateData" />
+    <StoreInfoForm :key="version" :operationTitle="operationTitle" :store="store" @cancel="incVersion"
+        @submit="createStore" />
 </template>
 
 <style scoped>

@@ -28,6 +28,19 @@ export default {
     });
   },
 
+  createStore: (newStore) => {
+    return axios.post("http://localhost:8081/createstore", {
+      newStore,
+    });
+  },
+
+  editStore: (edittedStore, storeID) => {
+    return axios.put("http://localhost:8081/editstore", {
+      edittedStore,
+      storeID,
+    });
+  },
+
   editEvent: (edittedEvent, storeID) => {
     return axios.put("http://localhost:8081/editevent", {
       edittedEvent,
