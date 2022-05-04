@@ -14,9 +14,11 @@ let username = ref(localStorage.getItem('user'))
 
 const logIn = (formData) => {
   localStorage.setItem('user', formData.fieldUserName);
+  loggedIn.value = localStorage.getItem('user') !== null;
+  username.value = localStorage.getItem('user');
   router.push('/account')
-  console.log('logged in: ', loggedIn.value);
-  console.log('username: ', username.value);
+  console.log('logged in! status: ', loggedIn.value);
+  console.log('logged in! username: ', username.value);
 }
 
 const logOut = () => {
@@ -24,8 +26,8 @@ const logOut = () => {
   loggedIn.value = localStorage.getItem('user') !== null;
   username.value = localStorage.getItem('user');
   router.push('/')
-  console.log('logged in: ', loggedIn.value);
-  console.log('username: ', username.value);
+  console.log('logged out! status: ', loggedIn.value);
+  console.log('logged out! username: ', username.value);
 }
 
 // sidebar links
@@ -182,7 +184,7 @@ const onSubmit = (e) => {
     </q-drawer>
 
     <q-page-container>
-      <router-view @loggingIn="logIn" />
+      <router-view @loggingIn="logIn" @loggingOut="logOut" />
     </q-page-container>
 
     <q-footer>

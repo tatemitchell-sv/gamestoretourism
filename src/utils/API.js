@@ -21,16 +21,16 @@ export default {
     });
   },
 
+  createStore: (newStore) => {
+    return axios.post("http://localhost:8081/createstore", {
+      newStore,
+    });
+  },
+
   createEvent: (newEvent, storeID) => {
     return axios.post("http://localhost:8081/createevent", {
       newEvent,
       storeID,
-    });
-  },
-
-  createStore: (newStore) => {
-    return axios.post("http://localhost:8081/createstore", {
-      newStore,
     });
   },
 
@@ -48,9 +48,13 @@ export default {
     });
   },
 
+  deleteStore: (storeID) => {
+    return axios.delete("http://localhost:8081/deletestore", {
+      data: { storeID },
+    });
+  },
+
   deleteEvent: (eventID, storeID) => {
-    console.log("event id: ", eventID);
-    console.log("store id: ", storeID);
     return axios.delete("http://localhost:8081/deleteevent", {
       data: { eventID, storeID },
     });

@@ -84,8 +84,8 @@ const loadData = async () => {
 loadData();
 
 const updateData = (updatedStoreData) => {
-    store.value = updatedStoreData.data;
     console.log('new store data in grandparent is = ', updatedStoreData)
+    router.push('/account');
 };
 
 </script>

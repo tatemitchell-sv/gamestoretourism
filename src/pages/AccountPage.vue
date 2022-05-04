@@ -4,8 +4,9 @@ import { useRouter } from 'vue-router';
 import { RouterLink } from 'vue-router';
 import API from '../utils/API.js';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
+import DeleteStore from '../components/DeleteStore.vue';
 const router = useRouter();
-const emits = defineEmits(['loggingIn']);
+const emits = defineEmits(['loggingIn', 'loggingOut']);
 
 // if not logged in, reroute
 const authenticate = () => {
@@ -14,6 +15,13 @@ const authenticate = () => {
     }
 };
 authenticate();
+
+// log out request on delete
+const logOutRequest = (newStoresArray) => {
+    console.log('Post-Delete Stores = ', newStoresArray)
+    emits('loggingOut');
+
+};
 
 // temporary store object
 let store = ref({
@@ -109,6 +117,8 @@ loadData();
             <div class="row">
                 <RouterLink to="/account">Edit Account Info</RouterLink>
             </div>
+            <q-separator inset class="q-mx-lg" />
+            <DeleteStore :storeID="store.id" @deleteConfirmed="logOutRequest" />
         </div>
     </div>
 

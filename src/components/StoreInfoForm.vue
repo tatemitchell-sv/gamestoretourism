@@ -43,7 +43,7 @@ console.log('formData is: ', formData.value)
 
             <h3>Phone Number and Website</h3>
             <q-input outlined v-model="formData.website" label="Website URL" />
-            <q-input outlined v-model="formData.phonenumber" label="Phone Number" />
+            <q-input outlined v-model="formData.phonenumber" label="Phone Number (xxx) xxx-xxxx" />
 
             <h3>Operating Hours</h3>
             <p>*LEAVE DAY BLANK IF CLOSED*</p>
@@ -91,7 +91,7 @@ console.log('formData is: ', formData.value)
         <q-dialog v-model="confirm" persistent>
             <q-card>
                 <q-card-section class="row items-center">
-                    <span class="q-ml-sm">Confirm update?</span>
+                    <span class="q-ml-sm">Confirm?</span>
                 </q-card-section>
 
                 <q-card-actions align="right">
