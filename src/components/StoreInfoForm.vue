@@ -58,8 +58,8 @@ console.log('formData is: ', formData.value)
             </div>
 
             <h3>Store Thumbnail</h3>
-            <q-input outlined v-model="formData.thumbnail.imgName" label="Image Name" />
-            <q-input outlined v-model="formData.thumbnail.imgId" label="Image ID" />
+            <q-input outlined v-model="formData.thumbnail.name" label="Image Name" />
+            <q-input outlined v-model="formData.thumbnail.cloudID" label="Image ID" />
 
             <div class="row">
                 <div class="col">

@@ -6,7 +6,7 @@ defineProps({ event: Object });
 
 <template>
     <q-card class="my-card">
-        <img :src="getCloudinaryUrl(event.img.imgName, event.img.imgId, null, null)" />
+        <img :src="getCloudinaryUrl(event.img.name, event.img.cloudID, null, null)" />
 
         <q-card-section>
             <div class="text-h6">{{ event.title }}</div>

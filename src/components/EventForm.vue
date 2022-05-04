@@ -87,13 +87,13 @@ let formData = ref({ ...props.event });
                 <div class="row">
                     <div class="col-2">Image Name: </div>
                     <div class="col">
-                        <q-input dense v-model="formData.img.imgName" />
+                        <q-input dense v-model="formData.img.name" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-2">Image ID: </div>
                     <div class="col">
-                        <q-input dense v-model="formData.img.imgId" />
+                        <q-input dense v-model="formData.img.cloudID" />
                     </div>
                 </div>
 

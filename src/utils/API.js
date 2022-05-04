@@ -41,6 +41,13 @@ export default {
     });
   },
 
+  createImage: (newImage, storeID) => {
+    return axios.post("http://localhost:8081/createimage", {
+      newImage,
+      storeID,
+    });
+  },
+
   editStore: (edittedStore, storeID) => {
     return axios.put("http://localhost:8081/editstore", {
       edittedStore,
@@ -77,6 +84,12 @@ export default {
   deleteProduct: (productID, storeID) => {
     return axios.delete("http://localhost:8081/deleteproduct", {
       data: { productID, storeID },
+    });
+  },
+
+  deleteImage: (imageToDelete, storeID) => {
+    return axios.delete("http://localhost:8081/deleteimage", {
+      data: { imageToDelete, storeID },
     });
   },
 };

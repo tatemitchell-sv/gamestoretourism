@@ -12,7 +12,7 @@ defineProps({ store: Object })
     <div class="row">
         <div class="col-3">
             <RouterLink :to="`/store/${store.id}`">
-                <img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, 200, 300)">
+                <img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 200, 300)">
             </RouterLink>
         </div>
         <div class="col">

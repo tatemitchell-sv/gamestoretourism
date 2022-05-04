@@ -13,13 +13,13 @@ let product = ref({
     id: "",
     name: "",
     info: "",
-    img: { imgName: "", imgId: "", },
+    img: { name: "", cloudID: "", },
 });
 
 // sumbit form functionality
 const createProduct = async (formData) => {
     const updatedStoreData = await API.createProduct(formData, props.storeID);
-    emits('updatedStore', updatedStoreData);
+    emits('updatedStore', updatedStoreData.data);
     console.log('new product created!  ', formData);
 };
 

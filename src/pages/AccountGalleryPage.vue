@@ -1,9 +1,11 @@
 <script setup>
-import EventEditor from '../components/EventEditor.vue'
 import { defineEmits, ref } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 import API from '../utils/API.js';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
+import LightboxDialog from '../components/LightboxDialog.vue';
+import GImageCreator from '../components/GImageCreator.vue';
+import DeleteGImage from '../components/DeleteGImage.vue';
 const router = useRouter();
 
 // log out capacity
@@ -36,15 +38,15 @@ let store = ref({
     googleMapsLink: "",
     googleMapsEmbed: "",
     thumbnail: {
-        imgName: "",
-        imgId: "",
+        name: "",
+        cloudID: "",
     },
     productsServices: [
         {
             id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", },
+            img: { name: "", cloudID: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -59,37 +61,51 @@ let store = ref({
             content: "",
             class: "",
             img: {
-                imgName: "",
-                imgId: "",
+                name: "",
+                cloudID: "",
             },
         },
     ],
     gallery: [
         {
-            imgName: "",
-            imgId: "",
+            name: "",
+            cloudID: "",
         },
     ],
 });
+// slide is for carousel index
+let slide = ref(1);
 
 // API request for store data
 const loadData = async () => {
 
     const response = await API.getStoreById(localStorage.getItem('user'));
     store.value = response.data;
+
+
 };
 loadData();
 
-let version = ref(0);
-
-const incVersion = () => {
-    version.value++;
+const updateGallery = (updatedStoreData) => {
+    store.value = updatedStoreData;
 };
 
 </script>
 
 <template>
-    <h1>Gallery</h1>
+    <h2>Gallery Manager</h2>
+
+    <section>
+        <GImageCreator :storeID="store.id" @updatedStore="updateGallery" />
+    </section>
+
+    <section>
+        {{ store.gallery.length }}
+        <div v-for="image in store.gallery" :key="image.id">
+            <img :src="getCloudinaryUrl(image.name, image.cloudID, 400, 600)" />
+            <DeleteGImage :image="image" :storeID="store.id" @updatedStore="updateGallery" />
+        </div>
+    </section>
 
 </template>
 

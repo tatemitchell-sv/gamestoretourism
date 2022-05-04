@@ -14,7 +14,7 @@ let toolbar = ref(false);
 
 <template>
     <div class="q-pa-md q-gutter-sm">
-        <img :src="getCloudinaryUrl(image.imgName, image.imgId, 200, 300)" @click="icon = true" />
+        <img :src="getCloudinaryUrl(image.name, image.cloudID, 200, 300)" @click="icon = true" />
 
         <q-dialog v-model="icon">
             <q-card>

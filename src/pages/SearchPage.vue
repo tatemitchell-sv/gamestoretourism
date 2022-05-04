@@ -27,15 +27,15 @@ let data = ref([{
     googleMapsLink: "",
     googleMapsEmbed: "",
     thumbnail: {
-        imgName: "",
-        imgId: "",
+        name: "",
+        cloudID: "",
     },
     productsServices: [
         {
             id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", },
+            img: { name: "", cloudID: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -50,15 +50,15 @@ let data = ref([{
             content: "",
             class: "",
             img: {
-                imgName: "",
-                imgId: "",
+                name: "",
+                cloudID: "",
             },
         },
     ],
     gallery: [
         {
-            imgName: "",
-            imgId: "",
+            name: "",
+            cloudID: "",
         },
     ],
 }]);

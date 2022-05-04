@@ -9,11 +9,11 @@ import EventCard from '../components/EventCard.vue';
 import EventDisplay from 'src/components/EventDisplay.vue';
 const route = useRoute()
 
-// slide is for carousel index
-let slide = ref(1);
-
 // tab is for events qtabs
 let tab = ref('list');
+
+// slide is for carousel index
+let slide = ref(1);
 
 // galleryGridify variables
 const colsPerRow = 3;
@@ -39,15 +39,15 @@ let store = ref({
     googleMapsLink: "",
     googleMapsEmbed: "",
     thumbnail: {
-        imgName: "",
-        imgId: "",
+        name: "",
+        cloudID: "",
     },
     productsServices: [
         {
             id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", },
+            img: { name: "", cloudID: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -62,15 +62,15 @@ let store = ref({
             content: "",
             class: "",
             img: {
-                imgName: "",
-                imgId: "",
+                name: "",
+                cloudID: "",
             },
         },
     ],
     gallery: [
         {
-            imgName: "",
-            imgId: "",
+            name: "",
+            cloudID: "",
         },
     ],
 });
@@ -107,7 +107,7 @@ loadData();
         <section>
             <div class="row">
                 <div class="col-4">
-                    <q-img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, null, 500)">
+                    <q-img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, null, 500)">
                         <div class="absolute-bottom-right text-subtitle2">
                             Caption
                         </div>
@@ -142,7 +142,7 @@ loadData();
             <h3>Popular Products and Services</h3>
             <div class="row">
                 <div v-for="product in store.productsServices" :key="product.id" class="col">
-                    <img class="productImg" :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, 50, 150)">
+                    <img class="productImg" :src="getCloudinaryUrl(product.img.name, product.img.cloudID, 50, 150)">
                 </div>
             </div>
             <hr />
@@ -159,7 +159,7 @@ loadData();
             <h3>Crazy Gallery!!!</h3>
 
             <div v-for="(row, index) in rows" :key="index" class="row">
-                <div v-for="image in row" :key="image.imgId" class="col">
+                <div v-for="image in row" :key="image.id" class="col">
                     <LightboxDialog :image="image" :gallery="store.gallery" />
                 </div>
             </div>

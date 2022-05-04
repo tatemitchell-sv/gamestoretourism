@@ -28,15 +28,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5943271964793!2d-112.02629208466394!3d43.489935779127265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545fc2bcd81ccf%3A0x8e6c91c90c7bff64!2sRound%20Table%20Games!5e0!3m2!1sen!2sus!4v1651170255384!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "roundtablethumbnail_wnzooo.jpg",
-      imgId: "v1650404501",
+      name: "roundtablethumbnail_wnzooo.jpg",
+      cloudID: "v1650404501",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -47,7 +47,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -58,7 +58,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -69,7 +69,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -80,7 +80,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -98,63 +98,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "roundtablethumbnail_wnzooo.jpg",
-        imgId: "v1650404501",
+        name: "roundtablethumbnail_wnzooo.jpg",
+        cloudID: "v1650404501",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -187,15 +187,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4749959597425!2d-112.04325058466385!3d43.49242567912708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594fd76f9bdf%3A0x17aab49ebd3785b8!2sA%20Street%20Games!5e0!3m2!1sen!2sus!4v1651170338870!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "astreetthumbnail_lrlwnz_xqec3d.jpg",
-      imgId: "v1650927666",
+      name: "astreetthumbnail_lrlwnz_xqec3d.jpg",
+      cloudID: "v1650927666",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -206,7 +206,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -217,7 +217,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -228,7 +228,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -239,7 +239,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -257,63 +257,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "astreetthumbnail_lrlwnz_xqec3d.jpg",
-        imgId: "v1650927666",
+        name: "astreetthumbnail_lrlwnz_xqec3d.jpg",
+        cloudID: "v1650927666",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -346,15 +346,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.682986057!2d-96.73455008499195!3d33.03848148089384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c18642107149f%3A0x7b175fc8b0e00ebc!2sMadness%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172245703!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "madnessthumbnail_smlvw9.jpg",
-      imgId: "v1650404500",
+      name: "madnessthumbnail_smlvw9.jpg",
+      cloudID: "v1650404500",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -365,7 +365,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -376,7 +376,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -387,7 +387,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -398,7 +398,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -416,63 +416,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "madnessthumbnail_smlvw9.jpg",
-        imgId: "v1650404500",
+        name: "madnessthumbnail_smlvw9.jpg",
+        cloudID: "v1650404500",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -505,15 +505,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.7853722823!2d-97.11190438499713!3d32.85093398094978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7fd1134ce54b%3A0x7003390f87cd40e!2sGeneration%20X%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172462946!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "genxgames_kqtcig.jpg",
-      imgId: "v1650931771",
+      name: "genxgames_kqtcig.jpg",
+      cloudID: "v1650931771",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -524,7 +524,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -535,7 +535,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -546,7 +546,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -557,7 +557,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -575,63 +575,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "genxgames_kqtcig.jpg",
-        imgId: "v1650931771",
+        name: "genxgames_kqtcig.jpg",
+        cloudID: "v1650931771",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -664,15 +664,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.7284819753236!2d-96.85589618499345!3d32.98456458090984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c240e578bbde1%3A0x84564e3bf40a5d7b!2sBoardwalk%20Games!5e0!3m2!1sen!2sus!4v1651172540544!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "boardwalkgames_om9e0j.jpg",
-      imgId: "v1650997609",
+      name: "boardwalkgames_om9e0j.jpg",
+      cloudID: "v1650997609",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -683,7 +683,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -694,7 +694,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -705,7 +705,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -716,7 +716,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -734,63 +734,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "boardwalkgames_om9e0j.jpg",
-        imgId: "v1650997609",
+        name: "boardwalkgames_om9e0j.jpg",
+        cloudID: "v1650997609",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -823,15 +823,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4463011326357!2d-111.78422038465213!3d43.82584327911571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4ffd0ebaf7%3A0xfb506d9a730449fb!2sGamePulse!5e0!3m2!1sen!2sus!4v1651172577976!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "gamepulse_l1cgdg.jpg",
-      imgId: "v1650998009",
+      name: "gamepulse_l1cgdg.jpg",
+      cloudID: "v1650998009",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -842,7 +842,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -853,7 +853,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -864,7 +864,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -875,7 +875,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -893,63 +893,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "gamepulse_l1cgdg.jpg",
-        imgId: "v1650998009",
+        name: "gamepulse_l1cgdg.jpg",
+        cloudID: "v1650998009",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -982,15 +982,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.701988525525!2d-112.03608738466396!3d43.487689279127295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545eb18363b1e3%3A0x6c87e5c2cac51dfc!2sGameopolis!5e0!3m2!1sen!2sus!4v1651172689876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "gameopolis_adxvyh.jpg",
-      imgId: "v1650998556",
+      name: "gameopolis_adxvyh.jpg",
+      cloudID: "v1650998556",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -1001,7 +1001,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -1012,7 +1012,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -1023,7 +1023,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -1034,7 +1034,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -1052,63 +1052,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "gameopolis_adxvyh.jpg",
-        imgId: "v1650998556",
+        name: "gameopolis_adxvyh.jpg",
+        cloudID: "v1650998556",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },
@@ -1141,15 +1141,15 @@ const data = [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.923460218931!2d-111.99372768466415!3d43.48306767912747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545f4174e937a5%3A0x7408cfae37de9b3!2sInner%20Circle%20Comics%20and%20Games!5e0!3m2!1sen!2sus!4v1651172746098!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "innercircle_yikv0n.jpg",
-      imgId: "v1651000494",
+      name: "innercircle_yikv0n.jpg",
+      cloudID: "v1651000494",
     },
     productsServices: [
       {
         id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
+        img: { name: "MTGLogo.png", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -1160,7 +1160,7 @@ const data = [
         id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
+        img: { name: "CatanLogo.jpg", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -1171,7 +1171,7 @@ const data = [
         id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
+        img: { name: "YuGiOhLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -1182,7 +1182,7 @@ const data = [
         id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
+        img: { name: "DnDLogo.png", cloudID: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -1193,7 +1193,7 @@ const data = [
         id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
+        img: { name: "PokemonLogo.jpg", cloudID: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -1211,63 +1211,63 @@ const data = [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7.jpg",
-          imgId: "v1651175121",
+          name: "newcapenna1_umdud7.jpg",
+          cloudID: "v1651175121",
         },
       },
     ],
     gallery: [
       {
-        imgName: "innercircle_yikv0n.jpg",
-        imgId: "v1651000494",
+        name: "innercircle_yikv0n.jpg",
+        cloudID: "v1651000494",
       },
       {
-        imgName: "counter1.webp",
-        imgId: "v1650908347",
+        name: "counter1.webp",
+        cloudID: "v1650908347",
       },
       {
-        imgName: "counter2.jpg",
-        imgId: "v1650908341",
+        name: "counter2.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "counter3.jpg",
-        imgId: "v1650410382",
+        name: "counter3.jpg",
+        cloudID: "v1650410382",
       },
       {
-        imgName: "images_2_l4vvka.jpg",
-        imgId: "v1650908342",
+        name: "images_2_l4vvka.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves1.jpg",
-        imgId: "v1650908344",
+        name: "shelves1.jpg",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves2.jpg",
-        imgId: "v1650908345",
+        name: "shelves2.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "shelves3.webp",
-        imgId: "v1650908344",
+        name: "shelves3.webp",
+        cloudID: "v1650908344",
       },
       {
-        imgName: "shelves4.jpg",
-        imgId: "v1650908342",
+        name: "shelves4.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves5.jpg",
-        imgId: "v1650908342",
+        name: "shelves5.jpg",
+        cloudID: "v1650908342",
       },
       {
-        imgName: "shelves6.jpg",
-        imgId: "v1650908341",
+        name: "shelves6.jpg",
+        cloudID: "v1650908341",
       },
       {
-        imgName: "th_pqkev9.jpg",
-        imgId: "v1650908345",
+        name: "th_pqkev9.jpg",
+        cloudID: "v1650908345",
       },
       {
-        imgName: "images_1_hy46d8.jpg",
-        imgId: "v1650908342",
+        name: "images_1_hy46d8.jpg",
+        cloudID: "v1650908342",
       },
     ],
   },

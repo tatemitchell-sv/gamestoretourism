@@ -11,7 +11,7 @@ defineProps({ store: Object })
     <q-card class="my-card">
 
         <RouterLink class="cardLink" :to="`/store/${store.id}`">
-            <q-img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, 350, 500)">
+            <q-img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 350, 500)">
                 <div class="absolute-bottom text-h6">
                     {{ store.name }}
                 </div>

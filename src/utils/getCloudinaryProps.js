@@ -1,9 +1,9 @@
 const getCloudinaryProps = (url) => {
   let cprops = {
-    imgName: "",
-    imgId: "",
+    name: "",
+    cloudID: "",
   };
 
-  // regex to cut URL up into imgName and Id
+  // regex to cut URL up into name and Id
 };
 export default getCloudinaryProps;

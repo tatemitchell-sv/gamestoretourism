@@ -42,15 +42,15 @@ let store = ref({
     googleMapsLink: "",
     googleMapsEmbed: "",
     thumbnail: {
-        imgName: "",
-        imgId: "",
+        name: "",
+        cloudID: "",
     },
     productsServices: [
         {
             id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", },
+            img: { name: "", cloudID: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -65,15 +65,15 @@ let store = ref({
             content: "",
             class: "",
             img: {
-                imgName: "",
-                imgId: "",
+                name: "",
+                cloudID: "",
             },
         },
     ],
     gallery: [
         {
-            imgName: "",
-            imgId: "",
+            name: "",
+            cloudID: "",
         },
     ],
 });
@@ -93,7 +93,7 @@ loadData();
     <h2>Account Settings</h2>
     <div class="row">
         <div class="col">
-            <img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, 200, 300)">
+            <img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 200, 300)">
             {{ store.name }}
         </div>
         <q-separator vertical inset class="q-mx-lg" />

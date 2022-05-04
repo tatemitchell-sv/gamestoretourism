@@ -17,8 +17,8 @@ let event = ref({
     content: "",
     class: "",
     img: {
-        imgName: "",
-        imgId: "",
+        name: "",
+        cloudID: "",
     },
 });
 
