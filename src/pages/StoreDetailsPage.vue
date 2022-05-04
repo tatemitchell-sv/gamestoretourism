@@ -41,13 +41,13 @@ let store = ref({
     thumbnail: {
         imgName: "",
         imgId: "",
-        imgType: "",
     },
     productsServices: [
         {
+            id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", imgType: "" },
+            img: { imgName: "", imgId: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -64,7 +64,6 @@ let store = ref({
             img: {
                 imgName: "",
                 imgId: "",
-                imgType: "",
             },
         },
     ],
@@ -72,7 +71,6 @@ let store = ref({
         {
             imgName: "",
             imgId: "",
-            imgType: "",
         },
     ],
 });
@@ -109,8 +107,7 @@ loadData();
         <section>
             <div class="row">
                 <div class="col-4">
-                    <q-img
-                        :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, null, 500)">
+                    <q-img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, null, 500)">
                         <div class="absolute-bottom-right text-subtitle2">
                             Caption
                         </div>
@@ -144,9 +141,8 @@ loadData();
         <section>
             <h3>Popular Products and Services</h3>
             <div class="row">
-                <div v-for="product in store.productsServices" :key="product.name" class="col">
-                    <img class="productImg"
-                        :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, product.img.imgType, 50, 150)">
+                <div v-for="product in store.productsServices" :key="product.id" class="col">
+                    <img class="productImg" :src="getCloudinaryUrl(product.img.imgName, product.img.imgId, 50, 150)">
                 </div>
             </div>
             <hr />

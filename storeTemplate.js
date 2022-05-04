@@ -18,13 +18,13 @@ export default {
   thumbnail: {
     imgName: "",
     imgId: "",
-    imgType: "",
   },
   productsServices: [
     {
+      id: "",
       name: "",
       info: "",
-      img: { imgName: "", imgId: "", imgType: "" },
+      img: { imgName: "", imgId: "" },
       link: "",
       iconWhite: "",
       iconBlack: "",
@@ -41,7 +41,6 @@ export default {
       img: {
         imgName: "",
         imgId: "",
-        imgType: "",
       },
     },
   ],
@@ -49,7 +48,6 @@ export default {
     {
       imgName: "",
       imgId: "",
-      imgType: "",
     },
   ],
 };

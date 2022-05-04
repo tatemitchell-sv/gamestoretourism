@@ -33,13 +33,13 @@ let store = ref({
     thumbnail: {
         imgName: "",
         imgId: "",
-        imgType: "",
     },
     productsServices: [
         {
+            id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", imgType: "" },
+            img: { imgName: "", imgId: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -56,7 +56,6 @@ let store = ref({
             img: {
                 imgName: "",
                 imgId: "",
-                imgType: "",
             },
         },
     ],
@@ -64,7 +63,6 @@ let store = ref({
         {
             imgName: "",
             imgId: "",
-            imgType: "",
         },
     ],
 });

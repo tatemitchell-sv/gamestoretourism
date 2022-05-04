@@ -12,7 +12,7 @@ let slide = ref(props.img.slideIndex)
         <q-carousel v-model="slide" transition-prev="slide-right" transition-next="slide-left" swipeable animated
             control-color="primary" navigation padding arrows height="300px" class="bg-grey-1 shadow-2 rounded-borders">
             <q-carousel-slide v-for="(image, index) in gallery" :key="image.imgId" :name="index + 1"
-                :img-src="getCloudinaryUrl(image.imgName, image.imgId, image.imgType, null, null)" />
+                :img-src="getCloudinaryUrl(image.imgName, image.imgId, null, null)" />
         </q-carousel>
     </div>
 </template>

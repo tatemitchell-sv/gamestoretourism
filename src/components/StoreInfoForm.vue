@@ -60,7 +60,6 @@ console.log('formData is: ', formData.value)
             <h3>Store Thumbnail</h3>
             <q-input outlined v-model="formData.thumbnail.imgName" label="Image Name" />
             <q-input outlined v-model="formData.thumbnail.imgId" label="Image ID" />
-            <q-input outlined v-model="formData.thumbnail.imgType" label="Image Type" />
 
             <div class="row">
                 <div class="col">

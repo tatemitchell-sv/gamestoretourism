@@ -1,4 +1,4 @@
-const getCloudinaryUrl = (imgName, imgId, imgType, h, w) => {
+const getCloudinaryUrl = (imgName, imgId, h, w) => {
   if (imgName && imgId) {
     let url = "https://res.cloudinary.com/htatemitchell/image/upload/";
 
@@ -8,7 +8,7 @@ const getCloudinaryUrl = (imgName, imgId, imgType, h, w) => {
     if (w != null) {
       url += "w_" + w + ",";
     }
-    url += ",c_fill/" + imgId + "/gamestoretour/" + imgName + "." + imgType;
+    url += ",c_fill/" + imgId + "/gamestoretour/" + imgName;
 
     return url;
   }

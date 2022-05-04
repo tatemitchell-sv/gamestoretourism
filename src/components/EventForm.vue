@@ -96,12 +96,6 @@ let formData = ref({ ...props.event });
                         <q-input dense v-model="formData.img.imgId" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2">Image Type: </div>
-                    <div class="col">
-                        <q-input dense v-model="formData.img.imgType" />
-                    </div>
-                </div>
 
             </q-card-section>
 

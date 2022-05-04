@@ -19,7 +19,6 @@ let event = ref({
     img: {
         imgName: "",
         imgId: "",
-        imgType: "",
     },
 });
 

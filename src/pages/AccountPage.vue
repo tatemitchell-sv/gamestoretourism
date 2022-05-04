@@ -44,13 +44,13 @@ let store = ref({
     thumbnail: {
         imgName: "",
         imgId: "",
-        imgType: "",
     },
     productsServices: [
         {
+            id: "",
             name: "",
             info: "",
-            img: { imgName: "", imgId: "", imgType: "" },
+            img: { imgName: "", imgId: "", },
             link: "",
             iconWhite: "",
             iconBlack: "",
@@ -67,7 +67,6 @@ let store = ref({
             img: {
                 imgName: "",
                 imgId: "",
-                imgType: "",
             },
         },
     ],
@@ -75,7 +74,6 @@ let store = ref({
         {
             imgName: "",
             imgId: "",
-            imgType: "",
         },
     ],
 });
@@ -95,8 +93,7 @@ loadData();
     <h2>Account Settings</h2>
     <div class="row">
         <div class="col">
-            <img
-                :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 200, 300)">
+            <img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, 200, 300)">
             {{ store.name }}
         </div>
         <q-separator vertical inset class="q-mx-lg" />

@@ -1,8 +1,8 @@
-export default [
+const data = [
   // Round Table Games
   {
     name: "Round Table Games",
-    id: "001",
+    id: "1",
     locations: {
       latitude: "43.490080",
       longitude: "-112.023890",
@@ -10,6 +10,7 @@ export default [
       streetAddress2: "",
       city: "Idaho Falls",
       state: "ID",
+      statelong: "Idaho",
       zip: "83401",
     },
     phonenumber: "(208) 607-9333",
@@ -27,15 +28,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5943271964793!2d-112.02629208466394!3d43.489935779127265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545fc2bcd81ccf%3A0x8e6c91c90c7bff64!2sRound%20Table%20Games!5e0!3m2!1sen!2sus!4v1651170255384!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "roundtablethumbnail_wnzooo",
+      imgName: "roundtablethumbnail_wnzooo.jpg",
       imgId: "v1650404501",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -43,9 +44,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -53,9 +55,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -63,9 +66,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -73,9 +77,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -85,7 +90,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -93,126 +98,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
-        },
-      },
-      {
-        id: "2",
-        start: "2022-04-29 19:00",
-        end: "2022-04-29 23:00",
-        title: "New Capenna Commander Tournament",
-        content:
-          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
-        class: "MTG",
-        img: {
-          imgName: "newcapenna1_umdud7",
-          imgId: "v1651175121",
-          imgType: "jpg",
-        },
-      },
-      {
-        id: "3",
-        start: "2022-04-29 19:00",
-        end: "2022-04-29 23:00",
-        title: "New Capenna Commander Tournament",
-        content:
-          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
-        class: "MTG",
-        img: {
-          imgName: "newcapenna1_umdud7",
-          imgId: "v1651175121",
-          imgType: "jpg",
-        },
-      },
-      {
-        id: "4",
-        start: "2022-04-29 19:00",
-        end: "2022-04-29 23:00",
-        title: "New Capenna Commander Tournament",
-        content:
-          '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
-        class: "MTG",
-        img: {
-          imgName: "newcapenna1_umdud7",
-          imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "roundtablethumbnail_wnzooo",
+        imgName: "roundtablethumbnail_wnzooo.jpg",
         imgId: "v1650404501",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // A Street Games
   {
     name: "A Street Games",
-    id: "002",
+    id: "2",
     locations: {
       latitude: "43.492510",
       longitude: "-112.041210",
@@ -220,6 +169,7 @@ export default [
       streetAddress2: "",
       city: "Idaho Falls",
       state: "ID",
+      statelong: "Idaho",
       zip: "83402",
     },
     phonenumber: "(208) 542-2824",
@@ -237,15 +187,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4749959597425!2d-112.04325058466385!3d43.49242567912708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594fd76f9bdf%3A0x17aab49ebd3785b8!2sA%20Street%20Games!5e0!3m2!1sen!2sus!4v1651170338870!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "astreetthumbnail_lrlwnz_xqec3d",
+      imgName: "astreetthumbnail_lrlwnz_xqec3d.jpg",
       imgId: "v1650927666",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -253,9 +203,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -263,9 +214,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -273,9 +225,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -283,9 +236,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -295,7 +249,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -303,84 +257,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "astreetthumbnail_lrlwnz_xqec3d",
+        imgName: "astreetthumbnail_lrlwnz_xqec3d.jpg",
         imgId: "v1650927666",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // Madness Games & Comics
   {
     name: "Madness Games & Comics",
-    id: "003",
+    id: "3",
     locations: {
       latitude: "33.039810",
       longitude: "-96.731567",
@@ -388,6 +328,7 @@ export default [
       streetAddress2: "#310",
       city: "Plano",
       state: "TX",
+      statelong: "Texas",
       zip: "75075",
     },
     phonenumber: "(972) 943-8135",
@@ -405,15 +346,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.682986057!2d-96.73455008499195!3d33.03848148089384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c18642107149f%3A0x7b175fc8b0e00ebc!2sMadness%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172245703!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "madnessthumbnail_smlvw9",
+      imgName: "madnessthumbnail_smlvw9.jpg",
       imgId: "v1650404500",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -421,9 +362,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -431,9 +373,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -441,9 +384,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -451,9 +395,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -463,7 +408,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -471,84 +416,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "madnessthumbnail_smlvw9",
+        imgName: "madnessthumbnail_smlvw9.jpg",
         imgId: "v1650404500",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // Generation X Games & Comics
   {
     name: "Generation X Games & Comics",
-    id: "004",
+    id: "4",
     locations: {
       latitude: "32.850910",
       longitude: "-97.109520",
@@ -556,6 +487,7 @@ export default [
       streetAddress2: "",
       city: "Bedford",
       state: "TX",
+      statelong: "Texas",
       zip: "76021",
     },
     phonenumber: "(817) 540-5556",
@@ -573,15 +505,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.7853722823!2d-97.11190438499713!3d32.85093398094978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7fd1134ce54b%3A0x7003390f87cd40e!2sGeneration%20X%20Games%20%26%20Comics!5e0!3m2!1sen!2sus!4v1651172462946!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "genxgames_kqtcig",
+      imgName: "genxgames_kqtcig.jpg",
       imgId: "v1650931771",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -589,9 +521,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -599,9 +532,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -609,9 +543,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -619,9 +554,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -631,7 +567,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -639,84 +575,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "genxgames_kqtcig",
+        imgName: "genxgames_kqtcig.jpg",
         imgId: "v1650931771",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // Boardwalk Games
   {
     name: "Boardwalk Games",
-    id: "005",
+    id: "5",
     locations: {
       latitude: "32.985720",
       longitude: "-96.853720",
@@ -724,6 +646,7 @@ export default [
       streetAddress2: "",
       city: "Carrollton",
       state: "TX",
+      statelong: "Texas",
       zip: "75006",
     },
     phonenumber: "(972) 810-0182",
@@ -741,15 +664,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.7284819753236!2d-96.85589618499345!3d32.98456458090984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c240e578bbde1%3A0x84564e3bf40a5d7b!2sBoardwalk%20Games!5e0!3m2!1sen!2sus!4v1651172540544!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "boardwalkgames_om9e0j",
+      imgName: "boardwalkgames_om9e0j.jpg",
       imgId: "v1650997609",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -757,9 +680,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -767,9 +691,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -777,9 +702,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -787,9 +713,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -799,7 +726,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -807,84 +734,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "boardwalkgames_om9e0j",
+        imgName: "boardwalkgames_om9e0j.jpg",
         imgId: "v1650997609",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // GamePulse
   {
     name: "GamePulse",
-    id: "006",
+    id: "6",
     locations: {
       latitude: "43.825680",
       longitude: "-111.782020",
@@ -892,6 +805,7 @@ export default [
       streetAddress2: "",
       city: "Rexburg",
       state: "ID",
+      statelong: "Idaho",
       zip: "83440",
     },
     phonenumber: "(208) 437-8060",
@@ -909,15 +823,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4463011326357!2d-111.78422038465213!3d43.82584327911571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4ffd0ebaf7%3A0xfb506d9a730449fb!2sGamePulse!5e0!3m2!1sen!2sus!4v1651172577976!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "gamepulse_l1cgdg",
+      imgName: "gamepulse_l1cgdg.jpg",
       imgId: "v1650998009",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -925,9 +839,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -935,9 +850,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -945,9 +861,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -955,9 +872,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -967,7 +885,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -975,84 +893,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "gamepulse_l1cgdg",
+        imgName: "gamepulse_l1cgdg.jpg",
         imgId: "v1650998009",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // Gameopolis
   {
     name: "Gameopolis",
-    id: "007",
+    id: "7",
     locations: {
       latitude: "43.487670",
       longitude: "-112.033920",
@@ -1060,6 +964,7 @@ export default [
       streetAddress2: "",
       city: "Idaho Falls",
       state: "ID",
+      statelong: "Idaho",
       zip: "83402",
     },
     phonenumber: "(208) 529-8026",
@@ -1077,15 +982,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.701988525525!2d-112.03608738466396!3d43.487689279127295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545eb18363b1e3%3A0x6c87e5c2cac51dfc!2sGameopolis!5e0!3m2!1sen!2sus!4v1651172689876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "gameopolis_adxvyh",
+      imgName: "gameopolis_adxvyh.jpg",
       imgId: "v1650998556",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -1093,9 +998,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -1103,9 +1009,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -1113,9 +1020,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -1123,9 +1031,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -1135,7 +1044,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -1143,84 +1052,70 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "gameopolis_adxvyh",
+        imgName: "gameopolis_adxvyh.jpg",
         imgId: "v1650998556",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
   // Inner Circle Comics and Games
   {
     name: "Inner Circle Comics and Games",
-    id: "008",
+    id: "8",
     locations: {
       latitude: "43.482290",
       longitude: "-111.990580",
@@ -1228,6 +1123,7 @@ export default [
       streetAddress2: "",
       city: "Idaho Falls",
       state: "ID",
+      statelong: "Idaho",
       zip: "83404",
     },
     phonenumber: "(208) 201-0358",
@@ -1245,15 +1141,15 @@ export default [
     googleMapsEmbed:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.923460218931!2d-111.99372768466415!3d43.48306767912747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545f4174e937a5%3A0x7408cfae37de9b3!2sInner%20Circle%20Comics%20and%20Games!5e0!3m2!1sen!2sus!4v1651172746098!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     thumbnail: {
-      imgName: "innercircle_yikv0n",
+      imgName: "innercircle_yikv0n.jpg",
       imgId: "v1651000494",
-      imgType: "jpg",
     },
     productsServices: [
       {
+        id: 1,
         name: "Magic: The Gathering",
         info: "",
-        img: { imgName: "MTGLogo", imgId: "v1650927883", imgType: "png" },
+        img: { imgName: "MTGLogo.png", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconWhite_i9ir8x.png",
@@ -1261,9 +1157,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650917900/gamestoretour/mtgIconBlack_nratyl.png",
       },
       {
+        id: 2,
         name: "Settlers of Catan",
         info: "",
-        img: { imgName: "CatanLogo", imgId: "v1650928205", imgType: "jpg" },
+        img: { imgName: "CatanLogo.jpg", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexWhite_dc2wfi.png",
@@ -1271,9 +1168,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/catanHexBlack_zj1xob.png",
       },
       {
+        id: 3,
         name: "Yu-Gi-Oh!",
         info: "",
-        img: { imgName: "YuGiOhLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "YuGiOhLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconWhite_fel8zq.png",
@@ -1281,9 +1179,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920230/gamestoretour/yugiohIconBlack_chclh5.png",
       },
       {
+        id: 4,
         name: "Dungeons & Dragons",
         info: "",
-        img: { imgName: "DnDLogo", imgId: "v1650928205", imgType: "png" },
+        img: { imgName: "DnDLogo.png", imgId: "v1650928205" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconWhite_tzazjv.png",
@@ -1291,9 +1190,10 @@ export default [
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650918524/gamestoretour/DnDIconBlack_wnlnlz.png",
       },
       {
+        id: 5,
         name: "Pokemon",
         info: "",
-        img: { imgName: "PokemonLogo", imgId: "v1650927883", imgType: "jpg" },
+        img: { imgName: "PokemonLogo.jpg", imgId: "v1650927883" },
         link: "",
         iconWhite:
           "img:https://res.cloudinary.com/htatemitchell/image/upload/v1650920002/gamestoretour/pokeballIconWhite_ajiedu.png",
@@ -1303,7 +1203,7 @@ export default [
     ],
     events: [
       {
-        id: "1",
+        id: 1,
         start: "2022-04-29 19:00",
         end: "2022-04-29 23:00",
         title: "New Capenna Commander Tournament",
@@ -1311,78 +1211,65 @@ export default [
           '<img src="https://res.cloudinary.com/htatemitchell/image/upload/w_300/v1650927883/gamestoretour/MTGLogo.png" /><p>Fee: TBA</p>',
         class: "MTG",
         img: {
-          imgName: "newcapenna1_umdud7",
+          imgName: "newcapenna1_umdud7.jpg",
           imgId: "v1651175121",
-          imgType: "jpg",
         },
       },
     ],
     gallery: [
       {
-        imgName: "innercircle_yikv0n",
+        imgName: "innercircle_yikv0n.jpg",
         imgId: "v1651000494",
-        imgType: "jpg",
       },
       {
-        imgName: "counter1",
+        imgName: "counter1.webp",
         imgId: "v1650908347",
-        imgType: "webp",
       },
       {
-        imgName: "counter2",
+        imgName: "counter2.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "counter3",
+        imgName: "counter3.jpg",
         imgId: "v1650410382",
-        imgType: "jpg",
       },
       {
-        imgName: "images_2_l4vvka",
+        imgName: "images_2_l4vvka.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves1",
+        imgName: "shelves1.jpg",
         imgId: "v1650908344",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves2",
+        imgName: "shelves2.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves3",
+        imgName: "shelves3.webp",
         imgId: "v1650908344",
-        imgType: "webp",
       },
       {
-        imgName: "shelves4",
+        imgName: "shelves4.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves5",
+        imgName: "shelves5.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
       {
-        imgName: "shelves6",
+        imgName: "shelves6.jpg",
         imgId: "v1650908341",
-        imgType: "jpg",
       },
       {
-        imgName: "th_pqkev9",
+        imgName: "th_pqkev9.jpg",
         imgId: "v1650908345",
-        imgType: "jpg",
       },
       {
-        imgName: "images_1_hy46d8",
+        imgName: "images_1_hy46d8.jpg",
         imgId: "v1650908342",
-        imgType: "jpg",
       },
     ],
   },
 ];
+module.exports = data;

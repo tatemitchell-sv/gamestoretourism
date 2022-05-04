@@ -11,8 +11,7 @@ defineProps({ store: Object })
     <q-card class="my-card">
 
         <RouterLink class="cardLink" :to="`/store/${store.id}`">
-            <q-img
-                :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, store.thumbnail.imgType, 350, 500)">
+            <q-img :src="getCloudinaryUrl(store.thumbnail.imgName, store.thumbnail.imgId, 350, 500)">
                 <div class="absolute-bottom text-h6">
                     {{ store.name }}
                 </div>
@@ -22,7 +21,7 @@ defineProps({ store: Object })
 
         <q-card-section>
             For fans of:
-            <q-chip v-for="product in chipMap(store.productsServices)" :key="product.name" class="glossy"
+            <q-chip v-for="product in chipMap(store.productsServices)" :key="product.id" class="glossy"
                 :color="product.chipColor" text-color="white" :icon-right="product.iconWhite">
                 {{ product.name }}
             </q-chip>

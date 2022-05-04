@@ -24,13 +24,13 @@ let data = ref([{
   thumbnail: {
     imgName: "",
     imgId: "",
-    imgType: "",
   },
   productsServices: [
     {
+      id: "",
       name: "",
       info: "",
-      img: { imgName: "", imgId: "", imgType: "" },
+      img: { imgName: "", imgId: "", },
       link: "",
       iconWhite: "",
       iconBlack: "",
@@ -47,7 +47,6 @@ let data = ref([{
       img: {
         imgName: "",
         imgId: "",
-        imgType: "",
       },
     },
   ],
@@ -55,7 +54,6 @@ let data = ref([{
     {
       imgName: "",
       imgId: "",
-      imgType: "",
     },
   ],
 }]);

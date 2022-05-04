@@ -34,6 +34,13 @@ export default {
     });
   },
 
+  createProduct: (newProduct, storeID) => {
+    return axios.post("http://localhost:8081/createproduct", {
+      newProduct,
+      storeID,
+    });
+  },
+
   editStore: (edittedStore, storeID) => {
     return axios.put("http://localhost:8081/editstore", {
       edittedStore,
@@ -48,6 +55,13 @@ export default {
     });
   },
 
+  editProduct: (edittedProduct, storeID) => {
+    return axios.put("http://localhost:8081/editproduct", {
+      edittedProduct,
+      storeID,
+    });
+  },
+
   deleteStore: (storeID) => {
     return axios.delete("http://localhost:8081/deletestore", {
       data: { storeID },
@@ -57,6 +71,12 @@ export default {
   deleteEvent: (eventID, storeID) => {
     return axios.delete("http://localhost:8081/deleteevent", {
       data: { eventID, storeID },
+    });
+  },
+
+  deleteProduct: (productID, storeID) => {
+    return axios.delete("http://localhost:8081/deleteproduct", {
+      data: { productID, storeID },
     });
   },
 };
