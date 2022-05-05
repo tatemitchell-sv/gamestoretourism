@@ -99,39 +99,82 @@ const onSubmit = (e) => {
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-btn flat dense round icon="home" class="home-button-icon" to="/" />
 
-        <q-toolbar-title>
-          <q-btn to="/">GameStore Finder</q-btn>
+        <q-toolbar-title style="display: flex;">
+          <q-btn class="home-button-text" to=" /">
+            <q-icon class="home-icon" name="home" />
+            <div>GameStore Finder</div>
+          </q-btn>
         </q-toolbar-title>
 
-        <q-form id="searchBarForm" @submit="onSubmit">
-          <q-input id="searchBar" dark dense standout v-model="searchString" placeholder="search"
-            input-class="text-left" class="q-ml-md">
-            <q-btn type="submit" round color="purple" glossy icon="search" />
+        <q-form class="search-nav-form" @submit="onSubmit">
+          <q-input class="search-nav-input" dark dense standout v-model="searchString" placeholder="search"
+            input-class="text-left">
           </q-input>
+          <q-btn icon="search" type="submit" />
         </q-form>
 
+        <q-btn-dropdown class="search-dropdown" dropdown-icon="search">
+          <q-form class="search-dropdown-form" @submit="onSubmit">
+            <q-input class="search-dropdown-input" autofocus dark dense standout v-model="searchString"
+              placeholder="search" input-class="text-left" input-style="width: 100%;">
 
-        <div v-if="!loggedIn">
-          <RouterLink class="navLink" to="/login">
-            <div>Log In</div>
-          </RouterLink>
-          <div>
-            <q-btn to="/signup">Sign Up</q-btn>
+            </q-input>
+            <q-btn icon="search" type="submit" />
+          </q-form>
+        </q-btn-dropdown>
+
+        <div v-if="!loggedIn" class="login-nav">
+
+          <div class="account-links-text">
+            <div class="nav-link">
+              <RouterLink to="/login">
+                Log In
+              </RouterLink>
+            </div>
+            <div>
+              <q-btn to="/signup">Sign Up</q-btn>
+            </div>
           </div>
+
+          <div class="account-links-dropdown">
+            <q-btn-dropdown dropdown-icon="account_circle">
+              <q-list>
+
+                <q-item clickable v-close-popup to="/signup">
+                  <q-item-section>
+                    <q-item-label>Sign Up</q-item-label>
+                  </q-item-section>
+                </q-item>
+
+                <q-item clickable v-close-popup to="/login">
+                  <q-item-section>
+                    <q-item-label>Log In</q-item-label>
+                  </q-item-section>
+                </q-item>
+
+              </q-list>
+            </q-btn-dropdown>
+          </div>
+
         </div>
 
         <div v-else>
 
-          <q-btn-dropdown class="glossy" color="accent" label="Account">
+          <q-btn-dropdown dropdown-icon="account_circle">
             <div class="row no-wrap q-pa-md">
               <div class="column">
                 <div class="row text-h6 q-mb-md">Links</div>
-                <div class="row">
-                  <RouterLink to="/account">Settings</RouterLink>
+                <div class="row loggedin-link">
+
+                  <RouterLink to="/account">Account Settings</RouterLink>
+
                 </div>
-                <div class="row">
+                <div class="row loggedin-link">
+
                   <RouterLink :to="`/store/${username}`">See Store</RouterLink>
+
                 </div>
               </div>
 
@@ -156,27 +199,21 @@ const onSubmit = (e) => {
     <q-drawer v-model="leftDrawerOpen" bordered>
       <q-list>
 
-        <q-toolbar>
-          <q-toolbar-title>
-            <q-item-label header>
-              Essential Links
-            </q-item-label>
+        <div class="side-bar-label">
 
-          </q-toolbar-title>
+          <q-item-label header>
+            Essential Links
+          </q-item-label>
 
           <q-btn flat round dense icon="close" @click="toggleLeftDrawer" />
+        </div>
 
-        </q-toolbar>
 
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
 
-        <q-toolbar>
-          <q-toolbar-title>
-            <q-item-label header>
-              External Links
-            </q-item-label>
-          </q-toolbar-title>
-        </q-toolbar>
+        <q-item-label header>
+          External Links
+        </q-item-label>
 
         <ExternalLink v-for="link in externalLinks" :key="link.title" v-bind="link" />
 
@@ -188,41 +225,138 @@ const onSubmit = (e) => {
     </q-page-container>
 
     <q-footer>
-      <div>
-        <h2>footer</h2>
-        <p>© 2022 H. T. Mitchell Development. All rights reserved.</p>
+      <div class="copyright-container">
+        © 2022 H. T. Mitchell Development. All rights reserved.
       </div>
     </q-footer>
   </q-layout>
 </template>
 
 <style scoped>
-.navlink {
-  padding: 0px 20px;
-  font-size: 24px;
+.search-nav-form {
+  display: none;
 }
 
-#searchBarForm {
-  margin: 0px 10px 0px 10px;
+.search-dropdown {
+  display: flex;
+  align-items: center;
 }
 
-.navLink {
+.search-dropdown-form {
+  display: flex;
+  align-items: center;
+}
+
+.home-button-text {
+  display: none;
+}
+
+button.without-icon {
+  max-width: 20px;
+  padding-left: 25px;
+}
+
+.login-nav {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-link {
+  font-size: 16px;
+  margin: 0px 15px 0px 15px;
+}
+
+.nav-link a,
+a:visited,
+a:hover {
   color: white;
   text-decoration: none;
 }
 
-.navLink:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.navLink:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.navLink:active {
+.nav-link a:active {
   color: rgb(164, 164, 164);
   text-decoration: none;
+}
+
+.side-bar-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-bar-label button {
+  margin-right: 10px;
+}
+
+.account-links-text {
+  display: none;
+}
+
+.account-links-dropdown {
+  display: block;
+}
+
+.loggedin-link {
+  font-size: 16px;
+  margin: 10px 5px;
+
+}
+
+.loggedin-link a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.loggedin-link a:active {
+  color: #5e05e3;
+  text-decoration: none;
+}
+
+.copyright-container {
+  margin: 16px;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 970px) {
+
+  .home-button-icon {
+    display: none;
+  }
+
+  .home-button-text {
+    display: flex;
+  }
+
+  .home-button-text .home-icon {
+    margin-right: 5px;
+  }
+
+  .search-nav-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-dropdown {
+    display: none;
+  }
+
+  .account-links-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .account-links-dropdown {
+    display: none;
+  }
+
+  .copyright-container {
+    margin: 16px;
+    font-size: 14px;
+  }
+
 }
 </style>

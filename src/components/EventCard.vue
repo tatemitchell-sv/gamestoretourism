@@ -16,7 +16,7 @@ defineProps({ event: Object });
     </q-card>
 </template>
 
-<style>
+<style scoped>
 .my-card {
     display: flex;
     flex-direction: column;

@@ -17,5 +17,5 @@ let slide = ref(props.img.slideIndex)
     </div>
 </template>
 
-<style>
+<style scoped>
 </style>

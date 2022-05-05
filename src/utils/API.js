@@ -5,6 +5,10 @@ export default {
     return axios.get("http://localhost:8081/");
   },
 
+  getFeaturedStores: () => {
+    return axios.get("http://localhost:8081/featuredstores");
+  },
+
   getStoreById: (id) => {
     return axios.get(`http://localhost:8081/store/${id}`);
   },

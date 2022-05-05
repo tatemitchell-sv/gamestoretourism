@@ -102,44 +102,53 @@ loadData();
 </script>
 
 <template>
-    <q-page class="">
-        <h2>{{ store.name }}</h2>
-        <section>
-            <div class="row">
-                <div class="col-4">
-                    <q-img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, null, 500)">
-                        <div class="absolute-bottom-right text-subtitle2">
-                            Caption
-                        </div>
-                    </q-img>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        Address: <a :href="store.googleMapsLink" target="_blank">
-                            {{ store.locations.streetAddress1 }}
-                            {{ store.locations.streetAddress2 }}
-                            {{ store.locations.city }}
-                            {{ store.locations.state }}
-                            {{ store.locations.zip }}
-                        </a>
+    <q-page class="page">
+
+        <div class="row info-block">
+            <div class="col photo-block">
+                <q-img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 202, 500)">
+                    <div class="absolute-bottom-right text-subtitle2">
+                        Caption
                     </div>
+                </q-img>
 
-                    <div class="row"><a :href="`tel:${store.phonenumber}`">{{ store.phonenumber }}</a></div>
-                    <div class="row"><a :href="store.website" target="_blank">{{ store.website }}</a></div>
 
-                    <div class="row">Hours of Operation:</div>
-                    <div v-for="(item, index) in store.hours" :key="item.day" class="row">
-                        {{ store.hours[index].day }}: {{ store.hours[index].open }} - {{ store.hours[index].close }}
+            </div>
+            <div class="col text-block bg-positive">
+
+                <h2>{{ store.name }}</h2>
+
+                <div style="width: fit-content;">
+                    Hours of Operation:
+                    <div v-for="(item, index) in store.hours" :key="item.day">
+                        {{ store.hours[index].day }}:
+                        {{ store.hours[index].open }} - {{ store.hours[index].close }}
                     </div>
-                </div>
-                <div class="col" v-html="store.googleMapsEmbed">
-
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="row info-block">
+            <div class="col text-block bg-accent">
+                <a :href="store.googleMapsLink" target="_blank">
+                    {{ store.locations.streetAddress1 }}
+                    {{ store.locations.streetAddress2 }}
+                    {{ store.locations.city }}
+                    {{ store.locations.state }}
+                    {{ store.locations.zip }}
+                </a>
+
+                <div class="row"><a :href="`tel:${store.phonenumber}`">{{ store.phonenumber }}</a></div>
+                <div class="row"><a :href="store.website" target="_blank">{{ store.website }}</a></div>
+            </div>
+            <div class="col photo-block">
+                <div v-html="store.googleMapsEmbed" style="height: 300px; overflow: hidden;"></div>
+
+
+            </div>
+        </div>
 
         <section>
-            <h3>Popular Products and Services</h3>
+            <h4>Popular Products and Services</h4>
             <div class="row">
                 <div v-for="product in store.productsServices" :key="product.id" class="col">
                     <img class="productImg" :src="getCloudinaryUrl(product.img.name, product.img.cloudID, 50, 150)">
@@ -149,14 +158,14 @@ loadData();
         </section>
 
         <section>
-            <h3>Events</h3>
+            <h4>Events</h4>
             <EventDisplay :store="store" />
             <hr />
         </section>
 
 
         <section>
-            <h3>Crazy Gallery!!!</h3>
+            <h4>Gallery</h4>
 
             <div v-for="(row, index) in rows" :key="index" class="row">
                 <div v-for="image in row" :key="image.id" class="col">
@@ -167,7 +176,46 @@ loadData();
     </q-page>
 </template>
 
-<style>
+<style scoped>
+.page {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.text-block a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.colCentered {
+    text-align: center;
+}
+
+.colRight {
+    text-align: right;
+}
+
+.infoContainer {
+    background-color: rgb(104, 18, 157);
+    width: 80%;
+    margin: auto;
+}
+
+.googleEmbed {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
 .productImg {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }

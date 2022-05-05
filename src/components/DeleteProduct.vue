@@ -37,5 +37,5 @@ const deleteProduct = async () => {
 </template>
 
 
-<style>
+<style scoped>
 </style>

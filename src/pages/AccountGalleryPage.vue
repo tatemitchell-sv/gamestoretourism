@@ -100,7 +100,6 @@ const updateGallery = (updatedStoreData) => {
     </section>
 
     <section>
-        {{ store.gallery.length }}
         <div v-for="image in store.gallery" :key="image.id">
             <img :src="getCloudinaryUrl(image.name, image.cloudID, 400, 600)" />
             <DeleteGImage :image="image" :storeID="store.id" @updatedStore="updateGallery" />

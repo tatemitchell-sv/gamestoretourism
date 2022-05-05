@@ -35,5 +35,5 @@ const deleteImage = async () => {
     </q-dialog>
 </template>
 
-<style>
+<style scoped>
 </style>

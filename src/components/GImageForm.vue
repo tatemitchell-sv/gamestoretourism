@@ -48,5 +48,5 @@ console.log('formdata after assigning props is: ', formData.value)
     </q-dialog>
 </template>
 
-<style>
+<style scoped>
 </style>
