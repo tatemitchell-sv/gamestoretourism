@@ -128,11 +128,11 @@ const onSubmit = (e) => {
         <div v-if="!loggedIn" class="login-nav">
 
           <div class="account-links-text">
-            <div class="nav-link">
-              <RouterLink to="/login">
-                Log In
-              </RouterLink>
-            </div>
+
+            <RouterLink class="login-link" to="/login">
+              Log In
+            </RouterLink>
+
             <div>
               <q-btn to="/signup">Sign Up</q-btn>
             </div>
@@ -166,16 +166,12 @@ const onSubmit = (e) => {
             <div class="row no-wrap q-pa-md">
               <div class="column">
                 <div class="row text-h6 q-mb-md">Links</div>
-                <div class="row loggedin-link">
 
-                  <RouterLink to="/account">Account Settings</RouterLink>
+                <RouterLink class="acc-settings-link" to="/account">Account Settings</RouterLink>
 
-                </div>
-                <div class="row loggedin-link">
+                <RouterLink class="acc-settings-link" :to="`/store/${username}`">See Store</RouterLink>
 
-                  <RouterLink :to="`/store/${username}`">See Store</RouterLink>
 
-                </div>
               </div>
 
               <q-separator vertical inset class="q-mx-lg" />
@@ -262,21 +258,15 @@ button.without-icon {
 
 }
 
-.nav-link {
-  font-size: 16px;
-  margin: 0px 15px 0px 15px;
-}
-
-.nav-link a,
-a:visited,
-a:hover {
+.login-link {
   color: white;
   text-decoration: none;
 }
 
-.nav-link a:active {
-  color: rgb(164, 164, 164);
+.acc-settings-link {
+  color: black;
   text-decoration: none;
+  margin: 8px;
 }
 
 .side-bar-label {
@@ -295,25 +285,6 @@ a:hover {
 
 .account-links-dropdown {
   display: block;
-}
-
-.loggedin-link {
-  font-size: 16px;
-  margin: 10px 5px;
-
-}
-
-.loggedin-link a,
-a:visited,
-a:hover,
-a:active {
-  color: black;
-  text-decoration: none;
-}
-
-.loggedin-link a:active {
-  color: #5e05e3;
-  text-decoration: none;
 }
 
 .copyright-container {
