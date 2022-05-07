@@ -14,7 +14,7 @@ let slide = ref(props.image.id);
 
 <template>
 
-    <img :src="getCloudinaryUrl(image.name, image.cloudID, 200, 300)" @click="carousel = true" />
+    <img class="image-button" :src="getCloudinaryUrl(image.name, image.cloudID, 200, 300)" @click="carousel = true" />
 
     <q-dialog v-model="carousel">
 
@@ -39,6 +39,10 @@ let slide = ref(props.image.id);
 <style scoped>
 .image-carousel {
     overflow: hidden;
+}
+
+.image-button {
+    max-width: 100%;
 }
 
 .slide-image {

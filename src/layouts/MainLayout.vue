@@ -102,7 +102,7 @@ const onSubmit = (e) => {
         <q-btn flat dense round icon="home" class="home-button-icon" to="/" />
 
         <q-toolbar-title style="display: flex;">
-          <q-btn class="home-button-text" to=" /">
+          <q-btn class="home-button-text" to="/">
             <q-icon class="home-icon" name="home" />
             <div>GameStore Finder</div>
           </q-btn>
