@@ -3,7 +3,7 @@ import { useRoute } from 'vue-router';
 import { ref } from 'vue'
 import API from '../utils/API.js'
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js'
-import LightboxDialog from '../components/LightboxDialog.vue'
+import LightboxDialog from '../components/CarouselDialog.vue'
 import MyCalendar from '../components/MyCalendar.vue';
 import EventCard from '../components/EventCard.vue';
 import EventDisplay from 'src/components/EventDisplay.vue';
@@ -69,6 +69,7 @@ let store = ref({
     ],
     gallery: [
         {
+            id: "",
             name: "",
             cloudID: "",
         },

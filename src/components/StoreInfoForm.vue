@@ -26,8 +26,9 @@ console.log('formData is: ', formData.value)
 </script>
 
 <template>
-    <h2>{{ operationTitle }} Store</h2>
-    <div class="formContainer">
+    <h2 class="page-header">{{ operationTitle }} Store</h2>
+
+    <div class="form-container">
 
         <form>
 
@@ -57,7 +58,7 @@ console.log('formData is: ', formData.value)
                 </div>
             </div>
 
-            <h3>Store Thumbnail</h3>
+            <h3>Thumbnail</h3>
             <q-input outlined v-model="formData.thumbnail.name" label="Image Name" />
             <q-input outlined v-model="formData.thumbnail.cloudID" label="Image ID" />
 
@@ -110,5 +111,36 @@ console.log('formData is: ', formData.value)
     width: 70%;
     height: auto;
     margin: auto;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.form-container {
+    width: 300px;
+    margin: auto;
+}
+
+.log-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.form-button {
+    margin-top: 55px;
+}
+
+@media screen and (min-width: 970px) {
+    .form-container {
+        width: 600px;
+    }
 }
 </style>

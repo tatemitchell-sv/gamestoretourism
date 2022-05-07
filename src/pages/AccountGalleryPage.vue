@@ -3,7 +3,7 @@ import { defineEmits, ref } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 import API from '../utils/API.js';
 import getCloudinaryUrl from '../utils/getCloudinaryUrl.js';
-import LightboxDialog from '../components/LightboxDialog.vue';
+import LightboxDialog from '../components/CarouselDialog.vue';
 import GImageCreator from '../components/GImageCreator.vue';
 import DeleteGImage from '../components/DeleteGImage.vue';
 const router = useRouter();
