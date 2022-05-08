@@ -32,43 +32,42 @@ console.log('formData is: ', formData.value)
 
         <form>
 
-            <h3>Store Name</h3>
-            <q-input outlined v-model="formData.name" label="Store Name" />
+            <h3 class="input-header">Store Name</h3>
+            <q-input class="form-input" outlined v-model="formData.name" label="Store Name" />
 
-            <h3>Address</h3>
-            <q-input outlined v-model="formData.locations.streetAddress1" label="Address Line 1" />
-            <q-input outlined v-model="formData.locations.streetAddress2" label="Address Line 2" />
-            <q-input outlined v-model="formData.locations.city" label="City" />
-            <q-input outlined v-model="formData.locations.state" label="State" />
-            <q-input outlined v-model="formData.locations.zip" label="Zip Code" />
+            <h3 class="input-header">Address</h3>
+            <q-input class="form-input" outlined v-model="formData.locations.streetAddress1" label="Address Line 1" />
+            <q-input class="form-input" outlined v-model="formData.locations.streetAddress2" label="Address Line 2" />
+            <q-input class="form-input" outlined v-model="formData.locations.city" label="City" />
+            <q-input class="form-input" outlined v-model="formData.locations.state" label="State" />
+            <q-input class="form-input" outlined v-model="formData.locations.zip" label="Zip Code" />
 
-            <h3>Phone Number and Website</h3>
-            <q-input outlined v-model="formData.website" label="Website URL" />
-            <q-input outlined v-model="formData.phonenumber" label="Phone Number (xxx) xxx-xxxx" />
+            <h3 class="input-header">Phone and Website</h3>
+            <q-input class="form-input" outlined v-model="formData.website" label="Website URL" />
+            <q-input class="form-input" outlined v-model="formData.phonenumber" label="Phone Number (xxx) xxx-xxxx" />
 
-            <h3>Operating Hours</h3>
-            <p>*LEAVE DAY BLANK IF CLOSED*</p>
+            <h3 class="input-header">Operating Hours</h3>
+            <p class="form-instructions">*LEAVE DAY BLANK IF CLOSED*</p>
             <div class="row" v-for="day in formData.hours" :key="day.day">
-                <div class="col">{{ day.day }}: </div>
-                <div class="col">
-                    <q-input outlined v-model="day.open" label="Open" />
+                <div class="col-4 form-day">{{ day.day }}: </div>
+                <div class="col-4">
+                    <q-input class="form-input" outlined v-model="day.open" label="Open" />
                 </div>
-                <div class="col">
-                    <q-input outlined v-model="day.close" label="Close" />
+                <div class="col-4">
+                    <q-input class="form-input" outlined v-model="day.close" label="Close" />
                 </div>
             </div>
 
-            <h3>Thumbnail</h3>
-            <q-input outlined v-model="formData.thumbnail.name" label="Image Name" />
-            <q-input outlined v-model="formData.thumbnail.cloudID" label="Image ID" />
+            <h3 class="input-header">Thumbnail</h3>
+            <q-input class="form-input" outlined v-model="formData.thumbnail.name" label="Image Name" />
+            <q-input class="form-input" outlined v-model="formData.thumbnail.cloudID" label="Image ID" />
 
-            <div class="row">
-                <div class="col">
-                    <q-btn label="Back" color="primary" @click="discard = true" />
-                </div>
-                <div class="col">
-                    <q-btn label="Submit" color="primary" @click="confirm = true" />
-                </div>
+            <div class="form-end-buttons">
+
+                <q-btn class="form-button" glossy label="Back" color="accent" @click="discard = true" />
+
+                <q-btn class="form-button" glossy label="Submit" color="accent" @click="confirm = true" />
+
             </div>
 
 
@@ -77,13 +76,16 @@ console.log('formData is: ', formData.value)
         <q-dialog v-model="discard" persistent>
             <q-card>
                 <q-card-section class="row items-center">
-                    <span class="q-ml-sm">Discard changes?</span>
+                    <span class="q-ml-sm">
+                        <h4 class="dialog-header">Discard Changes?</h4>
+                    </span>
                 </q-card-section>
 
-                <q-card-actions align="right">
+                <q-card-actions align="center">
 
-                    <q-btn flat label="Cancel" color="primary" v-close-popup />
-                    <q-btn flat label="Discard" color="primary" v-close-popup @click="discardBack" />
+                    <q-btn class="dialog-button" glossy label="Cancel" color="accent" v-close-popup />
+                    <q-btn class="dialog-button" glossy label="Discard" color="accent" v-close-popup
+                        @click="discardBack" />
                 </q-card-actions>
             </q-card>
         </q-dialog>
@@ -91,13 +93,16 @@ console.log('formData is: ', formData.value)
         <q-dialog v-model="confirm" persistent>
             <q-card>
                 <q-card-section class="row items-center">
-                    <span class="q-ml-sm">Confirm?</span>
+                    <span class="q-ml-sm">
+                        <h4 class="dialog-header">Confirm?</h4>
+                    </span>
                 </q-card-section>
 
-                <q-card-actions align="right">
+                <q-card-actions align="center">
 
-                    <q-btn flat label="Cancel" color="primary" v-close-popup />
-                    <q-btn flat label="Confirm" color="primary" v-close-popup @click="onSubmit" />
+                    <q-btn class="dialog-button" glossy label="Cancel" color="accent" v-close-popup />
+                    <q-btn class="dialog-button" glossy label="Confirm" color="accent" v-close-popup
+                        @click="onSubmit" />
                 </q-card-actions>
             </q-card>
         </q-dialog>
@@ -107,19 +112,19 @@ console.log('formData is: ', formData.value)
 </template>
 
 <style scoped>
-.formContainer {
-    width: 70%;
-    height: auto;
-    margin: auto;
-}
-
 .page-header {
     text-align: center;
+    font-size: 40px;
 }
 
 .form-container {
-    width: 300px;
+    width: 90%;
     margin: auto;
+}
+
+.input-header {
+    font-size: 30px;
+    text-align: center;
 }
 
 .log-in-form {
@@ -134,13 +139,47 @@ console.log('formData is: ', formData.value)
     margin: 5px 0px;
 }
 
+.form-end-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .form-button {
-    margin-top: 55px;
+    margin: 40px 20px;
+}
+
+.dialog-header {
+    text-align: center;
+    margin: 20px;
+}
+
+.dialog-button {
+    margin: 20px 20px;
+}
+
+
+.form-day {
+    display: flex;
+    align-items: center;
+}
+
+.form-instructions {
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 @media screen and (min-width: 970px) {
+    .page-header {
+        font-size: 60px;
+    }
+
     .form-container {
         width: 600px;
+    }
+
+    .input-header {
+        font-size: 48px;
     }
 }
 </style>
