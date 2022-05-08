@@ -116,14 +116,13 @@ const onSubmitAdv = async (e) => {
     <q-page class="search-page">
 
         <section class="advanced-search">
-            <q-scroll-area class="adv-search-scroll" :thumb-style="thumbStyle" :bar-style="barStyle"
-                style="height: 600px">
+            <q-scroll-area class="advSearch" :thumb-style="thumbStyle" :bar-style="barStyle" style="height: 600px">
                 <form @submit.prevent="onSubmitAdv">
                     <h4>Advanced Search</h4>
-                    <q-input class="adv-input" filled v-model="searchCriteria.storeName" label="Store Name" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.city" label="City" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.state" label="State" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.zip" label="Zip" />
+                    <q-input filled v-model="searchCriteria.storeName" label="Store Name" />
+                    <q-input filled v-model="searchCriteria.city" label="City" />
+                    <q-input filled v-model="searchCriteria.state" label="State" />
+                    <q-input filled v-model="searchCriteria.zip" label="Zip" />
 
                     <div>
                         <p>Popular products</p>
@@ -135,8 +134,8 @@ const onSubmitAdv = async (e) => {
                     </div>
                     <p>Add custom search products</p>
                     <q-input outlined v-model="customProduct" label="Products" />
-                    <q-btn class="submit-button" type="submit" color="grey-4" text-color="purple" glossy unelevated
-                        icon="search" label="Submit" />
+                    <q-btn type="submit" color="grey-4" text-color="purple" glossy unelevated icon="search"
+                        label="Submit" />
                 </form>
             </q-scroll-area>
         </section>
@@ -147,6 +146,7 @@ const onSubmitAdv = async (e) => {
                 <h3 v-else>{{ data.length }} results found for '{{ route.query.searchString }}'</h3>
                 <div v-for="store in data" :key="store.name">
                     <SearchResult :store="store" />
+                    <hr />
                 </div>
             </template>
         </section>
@@ -160,44 +160,10 @@ const onSubmitAdv = async (e) => {
     flex-direction: column-reverse;
 }
 
-.advanced-search {
-    width: 100%;
-    padding: 20px;
-
-}
-
-
-
 @media screen and (min-width: 970px) {
 
     .search-page {
         flex-direction: row;
-    }
-
-    .advanced-search {
-        width: 33%;
-        position: fixed;
-        height: 1000px;
-        overflow: auto;
-        margin-bottom: 100px;
-        background-color: rgb(202, 202, 202);
-    }
-
-    .search-results {
-        position: relative;
-        left: 33%;
-    }
-
-    .adv-search-scroll {
-        height: 700px;
-    }
-
-    .adv-input {
-        margin-bottom: 10px;
-    }
-
-    .submit-button {
-        margin-bottom: 50px;
     }
 }
 </style>

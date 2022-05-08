@@ -91,36 +91,58 @@ loadData();
 
 <template>
     <h2>Account Settings</h2>
-    <div class="row">
-        <div class="col">
-            <img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 200, 300)">
-            {{ store.name }}
+
+    <div class="page-grid">
+
+        <div class="info-block">
+            <p>Username (Store ID): {{ store.id }}</p>
+            <p>Name: {{ store.name }}</p>
+            <RouterLink :to="`/store/${store.id}`">Go to Store Page</RouterLink>
         </div>
-        <q-separator vertical inset class="q-mx-lg" />
-        <div class="col">
-            <div class="row">
-                <RouterLink to="/account/events">Manage Events</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account/ps">Manage Products and Services</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account/gallery">Manage Gallery</RouterLink>
-            </div>
-            <q-separator inset class="q-mx-lg" />
-            <div class="row">
-                <RouterLink to="/account/edit">Edit Store Info</RouterLink>
-            </div>
-            <div class="row">
-                <RouterLink to="/account">Edit Account Info</RouterLink>
-            </div>
-            <q-separator inset class="q-mx-lg" />
+
+        <div class="links-block">
+            <RouterLink to="/account/events">Manage Events</RouterLink>
+            <RouterLink to="/account/ps">Manage Products and Services</RouterLink>
+            <RouterLink to="/account/gallery">Manage Gallery</RouterLink>
+            <RouterLink to="/account/edit">Edit Store Info</RouterLink>
             <DeleteStore :storeID="store.id" @deleteConfirmed="logOutRequest" />
         </div>
-    </div>
 
-    <RouterLink :to="`/store/${store.id}`">See your store!</RouterLink>
+    </div>
 </template>
 
 <style scoped>
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.links-block {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+@media screen and (min-width: 970px) {
+    h2 {
+        font-size: 60px;
+    }
+
+    .page-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
 </style>

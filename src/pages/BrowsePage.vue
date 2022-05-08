@@ -14,36 +14,42 @@ loadData();
 </script>
 
 <template>
-    <q-page class="">
+    <q-page>
+        <h2>Stores</h2>
+        <div class="store-list-container">
 
-        <div class="row">
-            <div class="col filterBar">
-                <form>
-                    <p>this is gonna be the filter</p>
-                </form>
+
+            <div v-for="store in data" :key="store.name">
+                <SearchResult :store="store" />
             </div>
-            <div class="col resultsList">
-                <h2>Stores</h2>
-                <div v-for="store in data" :key="store.name">
-                    <SearchResult :store="store" />
-                    <hr />
-                </div>
-            </div>
+
         </div>
+
+
+
+
+
 
     </q-page>
 </template>
 
 <style scoped>
-.filterBar {
-    background-color: gray;
-    position: fixed;
-    height: 100%;
-    width: 16%;
+h2 {
+    font-size: 40px;
+    text-align: center;
 }
 
-.resultsList {
-    margin-left: 17%;
+.store-list-container {
     width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 970px) {
+
+    h2 {
+        font-size: 60px;
+    }
 }
 </style>

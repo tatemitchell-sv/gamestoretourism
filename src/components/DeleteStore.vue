@@ -18,7 +18,7 @@ const deleteEvent = async () => {
 
 
 <template>
-    <q-btn label="delete" color="primary" @click="prompt = true" />
+    <q-btn class="delete-button" label="delete" color="primary" @click="prompt = true" />
 
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
@@ -38,4 +38,8 @@ const deleteEvent = async () => {
 
 
 <style scoped>
+.delete-button {
+    width: fit-content;
+    margin: 40px 0px;
+}
 </style>

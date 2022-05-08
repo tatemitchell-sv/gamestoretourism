@@ -95,18 +95,70 @@ const updateGallery = (updatedStoreData) => {
 <template>
     <h2>Gallery Manager</h2>
 
-    <section>
+    <section class="creator-section">
         <GImageCreator :storeID="store.id" @updatedStore="updateGallery" />
     </section>
 
-    <section>
-        <div v-for="image in store.gallery" :key="image.id">
-            <img :src="getCloudinaryUrl(image.name, image.cloudID, 400, 600)" />
-            <DeleteGImage :image="image" :storeID="store.id" @updatedStore="updateGallery" />
+    <section class="gallery">
+        <div class="image-container" v-for="image in store.gallery" :key="image.id">
+            <img class="image" :src="getCloudinaryUrl(image.name, image.cloudID, 200, 300)" />
+            <div class="delete-button">
+                <DeleteGImage :image="image" :storeID="store.id" @updatedStore="updateGallery" />
+            </div>
+
         </div>
     </section>
 
 </template>
 
 <style scoped>
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.creator-section {
+    margin: auto;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.image-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.image {
+    position: relative;
+}
+
+.delete-button {
+
+    position: absolute;
+    z-index: 6000;
+    bottom: 5px;
+    left: 0px;
+}
+
+@media screen and (min-width: 970px) {
+    h2 {
+        font-size: 60px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 40px;
+        width: 980px;
+        margin: auto;
+    }
+}
 </style>

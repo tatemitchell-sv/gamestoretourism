@@ -95,22 +95,75 @@ const updateData = (updatedStoreData) => {
 
     <h2>Products and Services</h2>
 
-    <div class="row" v-for="ps in store.productsServices" :key="ps.id">
-        <div class="col">
-            {{ ps.name }}
-        </div>
+    <section class="creator-section">
+        <ProductCreator :storeID="store.id" @updatedStore="updateData" />
+    </section>
 
-        <div class="col">
-            <ProductEditor :product="ps" :storeID="store.id" @updatedStore="updateData" />
-        </div>
-        <div class="col">
-            <DeleteProduct :product="ps" :storeID="store.id" @updatedStore="updateData" />
+    <div class="products-container">
+
+        <div class="product-row" v-for="ps in store.productsServices" :key="ps.id">
+            <div class="product-name">
+                <ul>
+                    <li>{{ ps.name }}</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <ProductEditor :product="ps" :storeID="store.id" @updatedStore="updateData" />
+            </div>
+            <div class="button-container">
+                <DeleteProduct :product="ps" :storeID="store.id" @updatedStore="updateData" />
+            </div>
         </div>
     </div>
-    <ProductCreator :storeID="store.id" @updatedStore="updateData" />
+
+
+
     <hr />
 
 </template>
 
 <style scoped>
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.creator-section {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    margin: 0px 10px 0px 0px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (min-width: 970px) {
+
+    h2 {
+        font-size: 60px;
+    }
+
+}
 </style>

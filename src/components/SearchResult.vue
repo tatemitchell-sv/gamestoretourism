@@ -9,25 +9,69 @@ defineProps({ store: Object })
 
 <template>
 
-    <div class="row">
-        <div class="col-3">
+    <q-card class="result-container">
+        <div class="thumbnail-block">
             <RouterLink :to="`/store/${store.id}`">
                 <img :src="getCloudinaryUrl(store.thumbnail.name, store.thumbnail.cloudID, 200, 300)">
             </RouterLink>
         </div>
-        <div class="col">
-            <div class="row">
-                <RouterLink :to="`/store/${store.id}`">
-                    <h3>{{ store.name }}</h3>
-                </RouterLink>
-            </div>
-            <div class="row">
+
+        <div class="text-block">
+            <RouterLink :to="`/store/${store.id}`">
+                <h3>{{ store.name }}</h3>
+            </RouterLink>
+            <p>
                 {{ store.locations.city }}, {{ store.locations.state }}
-            </div>
+            </p>
 
         </div>
-    </div>
+
+    </q-card>
+
 </template>
 
 <style scoped>
+.result-container {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+@media screen and (min-width: 970px) {
+    .result-container {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
 </style>
