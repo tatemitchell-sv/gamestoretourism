@@ -138,8 +138,8 @@ h2 {
 .products-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: auto;
+    align-items: center;
+
 }
 
 .product-row {
@@ -165,5 +165,8 @@ h2 {
         font-size: 60px;
     }
 
+    .product-row {
+        grid-template-columns: 400px 100px 100px;
+    }
 }
 </style>

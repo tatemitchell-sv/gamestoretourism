@@ -81,11 +81,9 @@ console.log('formData is: ', formData.value)
                     </span>
                 </q-card-section>
 
-                <q-card-actions align="center">
-
-                    <q-btn class="dialog-button" glossy label="Cancel" color="accent" v-close-popup />
-                    <q-btn class="dialog-button" glossy label="Discard" color="accent" v-close-popup
-                        @click="discardBack" />
+                <q-card-actions align="right" class="text-primary">
+                    <q-btn flat label="Cancel" v-close-popup />
+                    <q-btn flat label="Discard" @click="submitForm" v-close-popup />
                 </q-card-actions>
             </q-card>
         </q-dialog>
@@ -94,15 +92,13 @@ console.log('formData is: ', formData.value)
             <q-card>
                 <q-card-section class="row items-center">
                     <span class="q-ml-sm">
-                        <h4 class="dialog-header">Confirm?</h4>
+                        <h4 class="dialog-header">Confirm store information?</h4>
                     </span>
                 </q-card-section>
 
-                <q-card-actions align="center">
-
-                    <q-btn class="dialog-button" glossy label="Cancel" color="accent" v-close-popup />
-                    <q-btn class="dialog-button" glossy label="Confirm" color="accent" v-close-popup
-                        @click="onSubmit" />
+                <q-card-actions align="right" class="text-primary">
+                    <q-btn flat label="Cancel" v-close-popup />
+                    <q-btn flat label="Confirm" @click="submitForm" v-close-popup />
                 </q-card-actions>
             </q-card>
         </q-dialog>

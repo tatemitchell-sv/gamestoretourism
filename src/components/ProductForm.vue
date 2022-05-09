@@ -17,7 +17,7 @@ let formData = ref({ ...props.product });
 
 
 <template>
-    <q-btn :label="props.btnLabel" color="primary" @click="prompt = true" />
+    <q-btn :label="props.btnLabel" glossy text-color="white" color="accent" @click="prompt = true" />
 
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 1000px">

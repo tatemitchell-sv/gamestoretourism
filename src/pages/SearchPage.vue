@@ -105,6 +105,7 @@ let customProduct = ref('');
 
 const onSubmitAdv = async (e) => {
 
+    console.log('adv search submitted')
     const response = await API.advSearch(searchCriteria.value);
     data.value = response.data;
 
@@ -116,29 +117,25 @@ const onSubmitAdv = async (e) => {
     <q-page class="search-page">
 
         <section class="advanced-search">
-            <q-scroll-area class="adv-search-scroll" :thumb-style="thumbStyle" :bar-style="barStyle"
-                style="height: 600px">
-                <form @submit.prevent="onSubmitAdv">
-                    <h4>Advanced Search</h4>
-                    <q-input class="adv-input" filled v-model="searchCriteria.storeName" label="Store Name" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.city" label="City" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.state" label="State" />
-                    <q-input class="adv-input" filled v-model="searchCriteria.zip" label="Zip" />
+            <form @submit.prevent="onSubmitAdv">
+                <h4>Advanced Search</h4>
+                <q-input class="adv-input" filled v-model="searchCriteria.storeName" label="Store Name" />
+                <q-input class="adv-input" filled v-model="searchCriteria.city" label="City" />
+                <q-input class="adv-input" filled v-model="searchCriteria.state" label="State" />
+                <q-input class="adv-input" filled v-model="searchCriteria.zip" label="Zip" />
 
-                    <div>
-                        <p>Popular products</p>
-                        <q-checkbox v-model="searchCriteria.mtg" label="Magic: The Gathering" />
-                        <q-checkbox v-model="searchCriteria.dnd" label="Dungeons & Dragons" />
-                        <q-checkbox v-model="searchCriteria.ygo" label="Yu-Gi-Oh!" />
-                        <q-checkbox v-model="searchCriteria.pok" label="Pokemon" />
-                        <q-checkbox v-model="searchCriteria.soc" label="Settlers of Catan" />
-                    </div>
-                    <p>Add custom search products</p>
-                    <q-input outlined v-model="customProduct" label="Products" />
-                    <q-btn class="submit-button" type="submit" color="grey-4" text-color="purple" glossy unelevated
-                        icon="search" label="Submit" />
-                </form>
-            </q-scroll-area>
+                <div>
+                    <p>Popular products</p>
+                    <q-checkbox v-model="searchCriteria.mtg" label="Magic: The Gathering" />
+                    <q-checkbox v-model="searchCriteria.dnd" label="Dungeons & Dragons" />
+                    <q-checkbox v-model="searchCriteria.ygo" label="Yu-Gi-Oh!" />
+                    <q-checkbox v-model="searchCriteria.pok" label="Pokemon" />
+                    <q-checkbox v-model="searchCriteria.soc" label="Settlers of Catan" />
+                </div>
+                <p>Add custom search products</p>
+                <q-input filled v-model="customProduct" label="Products" />
+                <q-btn class="submit-button" type="submit" color="accent" text-color="white" glossy label="Search" />
+            </form>
         </section>
         <section class="search-results">
             <h2>Search</h2>
@@ -155,6 +152,21 @@ const onSubmitAdv = async (e) => {
 </template>
 
 <style scoped>
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
 .search-page {
     display: flex;
     flex-direction: column-reverse;
@@ -166,9 +178,25 @@ const onSubmitAdv = async (e) => {
 
 }
 
+.search-results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.submit-button {
+    margin: 35px 38%;
+}
 
 
 @media screen and (min-width: 970px) {
+
+    h2 {
+        font-size: 60px;
+    }
 
     .search-page {
         flex-direction: row;
@@ -176,28 +204,16 @@ const onSubmitAdv = async (e) => {
 
     .advanced-search {
         width: 33%;
-        position: fixed;
-        height: 1000px;
-        overflow: auto;
-        margin-bottom: 100px;
-        background-color: rgb(202, 202, 202);
+        background-color: rgb(232, 232, 232);
     }
 
     .search-results {
-        position: relative;
-        left: 33%;
-    }
-
-    .adv-search-scroll {
-        height: 700px;
+        width: 66%;
     }
 
     .adv-input {
         margin-bottom: 10px;
     }
 
-    .submit-button {
-        margin-bottom: 50px;
-    }
 }
 </style>

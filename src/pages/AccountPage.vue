@@ -92,7 +92,7 @@ loadData();
 <template>
     <h2>Account Settings</h2>
 
-    <div class="page-grid">
+    <div class="page-flex">
 
         <div class="info-block">
             <p>Username (Store ID): {{ store.id }}</p>
@@ -117,15 +117,16 @@ h2 {
     text-align: center;
 }
 
-.page-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.page-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .info-block {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    border: 20px solid rgb(199, 199, 199);
 }
 
 .links-block {
@@ -140,8 +141,9 @@ h2 {
         font-size: 60px;
     }
 
-    .page-grid {
-        grid-template-columns: 1fr 1fr;
+    .page-flex {
+        flex-direction: row;
+        justify-content: center;
     }
 
 }

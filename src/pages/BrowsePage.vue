@@ -18,17 +18,11 @@ loadData();
         <h2>Stores</h2>
         <div class="store-list-container">
 
-
             <div v-for="store in data" :key="store.name">
                 <SearchResult :store="store" />
             </div>
 
         </div>
-
-
-
-
-
 
     </q-page>
 </template>
@@ -40,8 +34,6 @@ h2 {
 }
 
 .store-list-container {
-    width: 80%;
-    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -50,6 +42,11 @@ h2 {
 
     h2 {
         font-size: 60px;
+    }
+
+    .store-list-container {
+        width: 80%;
+        margin: auto;
     }
 }
 </style>

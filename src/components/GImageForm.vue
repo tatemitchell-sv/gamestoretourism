@@ -14,7 +14,7 @@ console.log('formdata after assigning props is: ', formData.value)
 </script>
 
 <template>
-    <q-btn label="+ New Image" color="primary" @click="prompt = true" />
+    <q-btn label="+ New Image" glossy text-color="white" color="accent" @click="prompt = true" />
 
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 1000px">

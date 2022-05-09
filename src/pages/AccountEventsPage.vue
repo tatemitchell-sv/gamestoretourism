@@ -160,8 +160,7 @@ h3 {
 .events-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: auto;
+    align-items: center;
 }
 
 .event-row {
@@ -189,6 +188,10 @@ h3 {
 
     h3 {
         font-size: 48px;
+    }
+
+    .event-row {
+        grid-template-columns: 400px 100px 100px;
     }
 }
 </style>

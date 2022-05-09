@@ -34,9 +34,9 @@ defineProps({ store: Object })
 .result-container {
     display: flex;
     flex-direction: column;
-    width: 330px;
+    width: 320px;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -62,12 +62,13 @@ p {
 @media screen and (min-width: 970px) {
     .result-container {
         flex-direction: row;
-        width: 80%;
+        width: 700px;
+        margin-left: 20px;
     }
 
     h3 {
         text-align: left;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     p {
